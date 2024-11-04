@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="{{ url_for('mobile', path='/body.css') }}" rel="stylesheet">
+    <link href="{{ url_for('desktop', path='/body.css') }}" rel="stylesheet">
+    <link href="{{ url_for('css', path='/general.css') }}" rel="stylesheet">
+    <link href="{{ url_for('css', path='/fonts.css') }}" rel="stylesheet">
+    <script src="{{ url_for('js', path='/body.js') }}"></script>
+    <title>{{title}}</title>
+    <!-- All icons are from https://www.svgrepo.com/  -->
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<div class="top-bar">
+    <div class="logo-section">
+        <div class="logo" onclick="window.open('/', '_top')">
+            <div class="logo-names">DreiWerk Solutions</div>
+            <div class="logo-description">SOFTWARE SERVICES</div>
+        </div>
+    </div>
+    <div class="navigation-section">
+        <div class="navigation-button" onclick="navigate('/')">Home</div>
+        <div class="navigation-dropdown" onclick="navigate('/')">
+            <div class="nav-dropdown-info">
+                <div class="nav-dropdown-text">Leistungen</div>
+                <img class="nav-dropdown-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_down.svg') }}">
+            </div>
+            <div class="nav-dropdown-content">
+                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">Webentwicklung</div> </div>
+                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">Individualsoftware</div></div>
+                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">App-Entwicklung</div></div>
+<!--                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">SEO</div></div>-->
+            </div>
+        </div>
+        <div class="navigation-button" onclick="navigate('/')">Technologien</div>
+        <div class="navigation-button" onclick="navigate('/')">Referenzen</div>
+        <div class="navigation-button" onclick="navigate('/')">Über uns</div>
+        <div class="navigation-button" onclick="navigate('/')">Kontakt</div>
+    </div>
+</div>
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+<div class="bottom-bar">
+
+</div>
+</body>
+</html>

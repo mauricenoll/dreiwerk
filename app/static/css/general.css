@@ -1,0 +1,57 @@
+:root{
+    --primary: rgb(240, 248, 255);
+
+    --secondary: rgb(224, 233, 249);
+    --dark-blue: rgb(0, 51, 102);
+    --text: rgb(45, 45, 45);
+    --white-text: rgb(240,240,240);
+    --highlight: rgb(0, 122, 204);
+    --accent:  rgb(0, 204, 153);
+
+    --shadow: rgba(42,42,42, .55);
+    --accent-shadow: rgba(0, 204, 153, .65);
+
+    --small-font-size: .677vw; /*13px*/
+    --medium-font-size: .895vw; /*17px*/
+    --big-font-size: 1.25vw; /*24px*/
+    --large-font-size: 1.89vw; /*36px*/
+    --very-large-font-size: 2.6vw; /*50px*/
+    --humongous-font-size: 5.2vw; /*100px*/
+
+    --standard-shadow: 0 0 .325vw .105vw var(--shadow);
+    --standard-accent-shadow: 0 0 .325vw .105vw var(--accent-shadow);
+
+    --black-to-accent: brightness(0) saturate(100%) invert(50%) sepia(93%) saturate(1036%) hue-rotate(125deg) brightness(97%) contrast(103%);
+    --black-to-highlight: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(4565%) hue-rotate(189deg) brightness(98%) contrast(101%);
+
+    --top-bar-height: 8vh;
+}
+
+body{
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: Nunito Sans, sans-serif;
+    color: var(--text);
+    font-size: var(--medium-font-size);
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Orbitron", sans-serif;
+}
+
+button{
+    font-family: Nunito Sans, sans-serif;
+}
+
+div{
+    font-family: Nunito Sans, sans-serif;
+}
+
+p{
+    font-family: Nunito Sans, sans-serif;
+}
+
+button:focus{
+    outline: none;
+}

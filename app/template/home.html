@@ -1,0 +1,152 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/home.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/home.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/home.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
+<div class="homepage">
+    <div class="homepage-container">
+        <div class="homepage-sub-heading">wir bieten</div>
+        <div class="homepage-heading">Innovative Software-Lösungen</div>
+        <div class="homepage-sub-heading" id="lower">für eine digital-first Welt</div>
+        <p class="homepage-paragraph">
+            In der heutigen digitalen Welt reicht es nicht aus, nur Schritt zu halten – es geht darum, vorauszudenken.<br> Bei <strong>Noll & Schnatz Software Services</strong> entwickeln wir maßgeschneiderte Softwarelösungen, die sich nahtlos in Ihre bestehenden Prozesse integrieren und Ihnen dabei helfen, Ihr Unternehmen zukunftssicher aufzustellen.
+            <br><br>
+            Unser Team aus erfahrenen Entwicklern unterstützt Sie dabei, Ihre Visionen in die Realität umzusetzen. Egal ob Sie eine leistungsstarke Web-Anwendung, eine benutzerfreundliche mobile App oder eine umfassende Softwarelösung suchen – wir sind für Sie da.
+            <br><br>
+            Machen Sie den nächsten Schritt! Sichern Sie sich eine persönliche Beratung und entdecken Sie, wie wir Ihnen dabei helfen, neue Wege zu gehen.
+        </p>
+
+        <button class="secure-consultation-btn">Jetzt Beratung sichern!</button>
+    </div>
+<!-- TODO: wrap-->
+    <div class="service-selection-row">
+        <button class="service-selection-btn" id="webdev" onclick="toggleSelectedServiceSection(this)">Web-Entwicklung</button>
+        <button class="service-selection-btn" id="appdev" onclick="toggleSelectedServiceSection(this)">App-Entwicklung</button>
+        <button class="service-selection-btn" id="softwaredev" onclick="toggleSelectedServiceSection(this)">Individualsoftware</button>
+    </div>
+<!-- TODO: wrap-->
+    <div class="service-info-container" id="webdev-container">
+        <div class="text-section">
+            <div class="service-info-heading">Eine Website nach Ihrer Vision</div>
+            <div class="more-info-div">
+                <button class="more-info-btn">Mehr erfahren?</button>
+            </div>
+            <div class="service-info-text">
+                Wir entwickeln individuelle, leistungsstarke Webseiten, die Ihre Marke perfekt präsentieren.<br> Von modernen Designs bis hin zu maßgeschneiderten Funktionen – wir schaffen digitale Erlebnisse, die beeindrucken und Ihre Zielgruppe ansprechen. Lassen Sie uns gemeinsam Ihre Vision verwirklichen.
+            </div>
+            <div class="button-with-svg">
+                Jetzt Vision verwirklichen!
+                <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+            </div>
+        </div>
+        <div class="display-section">
+            <img class="service-img" alt="" src="{{ url_for('assets', path='/images/ai_person_creating_website.jpg') }}">
+        </div>
+    </div>
+    <div class="service-info-container" id="appdev-container">
+        <div class="text-section">
+            <div class="service-info-heading">Innovative App-Lösungen für Ihren Erfolg</div>
+            <div class="more-info-div">
+                <button class="more-info-btn">Mehr erfahren?</button>
+            </div>
+            <div class="service-info-text">
+                Wir erstellen maßgeschneiderte Apps, die Ihre Zielgruppe erreichen und begeistern. Ob iOS, Android oder plattformübergreifend – mit innovativem Design und intuitiver Benutzerführung entwickeln wir Lösungen, die sich an Ihren Bedürfnissen orientieren und echte Mehrwerte schaffen.
+            </div>
+            <div class="button-with-svg">
+                Jetzt Vision verwirklichen!
+                <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+            </div>
+        </div>
+        <div class="display-section">
+            <img class="service-img" alt="" src="{{ url_for('assets', path='/images/ai_code.jpg') }}">
+        </div>
+    </div>
+    <div class="service-info-container" id="softwaredev-container">
+        <div class="text-section">
+            <div class="service-info-heading">Maßgeschneiderte Softwarelösungen für Ihr Unternehmen</div>
+            <div class="more-info-div">
+                <button class="more-info-btn">Mehr erfahren?</button>
+            </div>
+            <div class="service-info-text">
+                Wir entwickeln individuelle Software, die genau auf Ihre Geschäftsprozesse zugeschnitten ist – ob Verwaltungstools, Managementlösungen oder spezifische Anwendungen. Mit unserem Know-how schaffen wir Systeme, die Ihre Effizienz steigern und Arbeitsabläufe optimieren.
+            </div>
+            <div class="button-with-svg">
+                Jetzt Anfrage stellen!
+                <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+            </div>
+        </div>
+        <div class="display-section">
+            <img class="service-img" alt="" src="{{ url_for('assets', path='/images/ai_code_2.jpg') }}">
+        </div>
+    </div>
+    <div class="icon-info-row">
+        <div class="icon-info-container">
+            <img class="info-icon" alt="" src="{{ url_for('assets', path='/icons/creativity_icon.svg') }}">
+            <p class="info-icon-text">Von der ersten Idee bis zur finalen Umsetzung – unser Team begleitet Sie Schritt für Schritt und gestaltet ein Produkt, das Ihre Vision zum Leben erweckt.</p>
+        </div>
+        <div class="icon-info-container">
+            <img class="info-icon" alt="" src="{{ url_for('assets', path='/icons/computer.svg') }}">
+            <p class="info-icon-text">Wir nutzen die neuesten Technologien und bewährte Tools, um leistungsstarke und zukunftssichere Software zu entwickeln.</p>
+        </div>
+        <div class="icon-info-container">
+            <img class="info-icon" alt="" src="{{ url_for('assets', path='/icons/shake_hands.svg') }}">
+            <p class="info-icon-text">Mit unserer langjährigen Erfahrung und fundiertem Fachwissen realisieren wir Projekte präzise und zuverlässig – für ein Ergebnis, das überzeugt.</p>
+        </div>
+    </div>
+
+    <div class="cooperation-div">
+        <div class="cooperation-heading">Unser Weg zum Erfolg – So arbeiten wir zusammen</div>
+        <div class="cooperation-text">Wir begleiten Sie durch jeden Schritt der Entwicklung, von der ersten Beratung bis zur finalen Übergabe. In enger Zusammenarbeit mit Ihnen entwickeln wir ein maßgeschneidertes Konzept, setzen Ihre Ideen in die Realität um und stehen Ihnen auch nach Projektabschluss zur Seite. Transparent, effizient und immer auf Ihre Bedürfnisse abgestimmt – so wird Ihr Projekt zum Erfolg.</div>
+        <div class="step-by-step-div">
+            <div class="step-container">
+                <div class="step-container-heading">
+                    <div class="step-count">1.</div>
+                    <div class="step-heading">Erstgespräch</div>
+                </div>
+                <div class="step-container-text">
+                    Im ersten Gespräch erfassen wir Ihre Anforderungen, Ideen und das gewünschte Budget. Hier legen wir die Basis für eine erfolgreiche Zusammenarbeit und stellen sicher, dass wir Ihre Vision verstehen.
+                </div>
+            </div>
+            <div class="step-container">
+                <div class="step-container-heading">
+                    <div class="step-count">2.</div>
+                    <div class="step-heading">Konzept</div>
+                </div>
+                <div class="step-container-text">
+                    Nach Analyse Ihrer Bedürfnisse erstellen wir ein maßgeschneidertes Konzept und machen Ihnen ein Angebot. Dabei präsentieren wir Ihnen unsere Ideen und Lösungsansätze, um die bestmögliche Lösung für Ihre Anforderungen zu finden.
+                </div>
+            </div>
+            <div class="step-container">
+                <div class="step-container-heading">
+                    <div class="step-count">3.</div>
+                    <div class="step-heading">Entwicklung</div>
+                </div>
+                <div class="step-container-text">
+                    In der Entwicklungsphase setzen wir Ihre Anforderungen Schritt für Schritt in die Tat um – natürlich in enger Abstimmung mit Ihnen, um sicherzustellen, dass das Ergebnis Ihren Vorstellungen entspricht.
+                </div>
+            </div>
+            <div class="step-container">
+                <div class="step-container-heading">
+                    <div class="step-count">4.</div>
+                    <div class="step-heading">Projektabschluss</div>
+                </div>
+                <div class="step-container-text">
+                    Zum Projektabschluss kümmern wir uns um die Einrichtung Ihrer Anwendung und übergeben Ihnen den Quellcode. So haben Sie eine vollständige und nachhaltige Lösung, bereit für den Einsatz.
+                </div>
+            </div>
+        </div>
+
+        <button class="contact-us-btn">Noch Fragen? <u>Kontaktieren</u> Sie uns!</button>
+
+
+    </div>
+
+
+
+</div>
+
+{% endblock %}
