@@ -1,0 +1,48 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/tech_stack.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/tech_stack.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/tech_stack.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="tech-stack">
+    <div class="tech-stack-landing">
+        <div class="tech-stack-landing-heading">Unser Tech-Stack:<br>Innovativ und Zukunftsorientiert</div>
+        <div class="tech-stack-landing-text">
+            Wir setzen auf modernste Technologien und bewährte Tools, um leistungsstarke und nachhaltige Lösungen zu entwickeln. Unser Team bleibt stets auf dem neuesten Stand der Technik, um Ihnen zukunftssichere und effiziente Software anzubieten, die auch langfristig Bestand hat. Mit einem Fokus auf Qualität und Innovation sorgen wir dafür, dass unsere Lösungen nicht nur Ihre aktuellen Anforderungen erfüllen, sondern auch für die Herausforderungen von morgen bereit sind.
+        </div>
+        <div class="tech-stack-row">
+            <div class="tech-stack-info-card">
+                <div class="tech-stack-info">
+                    <img class="tech-stack-info-card-icon" alt="" src="{{ url_for('assets', path='/icons/website_icon.svg') }}">
+                    <div class="tech-stack-info-heading">Web-Entwicklung:<br>ohne Kompromisse und mit viel Liebe</div>
+                    <div class="tech-stack-info-text">
+                        Für Ihre Webseite setzen wir auf maßgeschneiderte Lösungen anstelle von Baukästen. Unser Ziel ist es, Ihnen ein individuelles Design und einzigartige Funktionen zu bieten, die perfekt auf Ihre Marke und Bedürfnisse abgestimmt sind. So entsteht eine Webseite, die aus der Masse hervorsticht und Ihre Vision optimal repräsentiert.
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack-info-card">
+                <div class="tech-stack-info">
+                    <img class="tech-stack-info-card-icon" alt="" src="{{ url_for('assets', path='/icons/phone_icon.svg') }}">
+                    <div class="tech-stack-info-heading">App-Entwicklung:<br>Cross-Plattform und Skalierbar</div>
+                    <div class="tech-stack-info-text">
+                        Mit Dart entwickeln wir flexible und effiziente Apps, die gleichzeitig auf iOS und Android funktionieren. Dabei legen wir besonderen Wert auf ansprechendes Design, sowie auf ein robustes und skalierbares Backend. So entsteht eine App, die Nutzer begeistert und auch langfristig mit Ihrem Wachstum Schritt hält.
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack-info-card">
+                <div class="tech-stack-info">
+                    <img class="tech-stack-info-card-icon" alt="" src="{{ url_for('assets', path='/icons/laptop_icon.svg') }}">
+                    <div class="tech-stack-info-heading">Individualsoftware:<br>Maßgeschneidert und Zukunftssicher</div>
+                    <div class="tech-stack-info-text">
+                        Unsere Softwarelösungen passen sich perfekt Ihren Anforderungen an. Ob Verwaltungstools oder spezialisierte Anwendungen – wir entwickeln robuste und skalierbare Systeme, die Ihre Business-Prozesse optimieren und langfristig wachsen können.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

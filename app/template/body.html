@@ -8,7 +8,7 @@
     <link href="{{ url_for('css', path='/general.css') }}" rel="stylesheet">
     <link href="{{ url_for('css', path='/fonts.css') }}" rel="stylesheet">
     <script src="{{ url_for('js', path='/body.js') }}"></script>
-    <title>{{title}}</title>
+    <title>{{title}} || DreiWerk Solutions</title>
     <!-- All icons are from https://www.svgrepo.com/  -->
     {% block head %}
     {% endblock %}
@@ -30,12 +30,12 @@
             </div>
             <div class="nav-dropdown-content">
                 <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">Webentwicklung</div> </div>
-                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">Individualsoftware</div></div>
                 <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">App-Entwicklung</div></div>
-<!--                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">SEO</div></div>-->
+                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">Individualsoftware</div></div>
+                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">SEO</div></div>
             </div>
         </div>
-        <div class="navigation-button" onclick="navigate('/')">Technologien</div>
+        <div class="navigation-button" onclick="navigate('/tech-stack')">Technologien</div>
         <div class="navigation-button" onclick="navigate('/')">Referenzen</div>
         <div class="navigation-button" onclick="navigate('/')">Über uns</div>
         <div class="navigation-button" onclick="navigate('/')">Kontakt</div>

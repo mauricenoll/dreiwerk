@@ -21,5 +21,16 @@ def get_homepage(request: Request):
     return server.templates.TemplateResponse(name="home.html", context=context, request=request)
 
 
+@app.get("/tech-stack", response_class=HTMLResponse)
+def get_homepage(request: Request):
+
+    context = {
+        "request": request,
+        "title": "Unser TechStack"
+    }
+
+    return server.templates.TemplateResponse(name="tech_stack.html", context=context, request=request)
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=1337, forwarded_allow_ips=["*"], proxy_headers=True)
