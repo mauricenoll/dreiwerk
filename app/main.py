@@ -32,14 +32,23 @@ def get_homepage(request: Request):
 
 
 @app.get("/leistungen/", response_class=HTMLResponse)
-def get_leistungen(request: Request):
+def get_services(request: Request):
     context = {
         "request": request,
-        "title": "Unsere Leistungen"
+        "title": "Unsere Services"
     }
 
     return server.templates.TemplateResponse(name="services.html", context=context, request=request)
 
+
+@app.get("/leistungen/web-entwicklung", response_class=HTMLResponse)
+def get_service_web_development(request: Request):
+    context = {
+        "request": request,
+        "title": "Webentwicklung"
+    }
+
+    return server.templates.TemplateResponse(name="service_webdev.html", context=context, request=request)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=1337, forwarded_allow_ips=["*"], proxy_headers=True)

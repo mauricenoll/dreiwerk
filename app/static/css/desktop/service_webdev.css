@@ -1,0 +1,65 @@
+.service-webdev{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-section{
+    width: 75%;
+    height: 65vh;
+    margin-top: 4vh;
+    border-radius: .6vw;
+    padding: 2vh 2vw 5vh 2vw;
+    background: rgb(0,204,153);
+    background: linear-gradient(135deg, rgba(0,204,153,1) 55%, rgba(224,233,249,1) 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-heading{
+    font-size: var(--very-large-font-size);
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    color: var(--white-text);
+}
+
+.hero-text{
+    color: var(--white-text);
+    font-size: var(--medium-font-size);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 55%;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.button-with-svg{
+    margin-top: 5vh;
+    padding: 1vh .75vw;
+    font-size: var(--big-font-size);
+    font-weight: bolder;
+    color: var(--white-text);
+    font-family: Nunito Sans, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-bottom: .15vw solid var(--dark-blue);
+    transition: 450ms translate;
+    display: flex;
+    flex-direction: row;
+    gap: .5vw;
+}
+
+.button-with-svg:hover{
+    translate: 0 -2vh;
+}
+
+.button-icon{
+    width: var(--medium-font-size);
+    filter: invert(1);
+}

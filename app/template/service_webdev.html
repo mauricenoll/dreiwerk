@@ -1,0 +1,26 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/service_webdev.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/service_webdev.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/service_webdev.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
+<div class="service-webdev">
+    <div class="hero-section">
+        <div class="hero-heading">Web-Entwicklung</div>
+        <div class="hero-text">
+            Mit modernsten Technologien und maßgeschneiderten Lösungen bringen wir Ihre Ideen zum Leben. Ob individuelle Websites, komplexe Webanwendungen oder Unternehmensportale – wir bieten Ihnen innovative Webentwicklung, die auf Ihre Bedürfnisse zugeschnitten ist und nachhaltig begeistert.
+        </div>
+        <div class="hero-text">
+            Lassen Sie uns gemeinsam Ihre Vision online verwirklichen und Ihre digitale Präsenz auf das nächste Level heben.
+        </div>
+        <div class="button-with-svg">
+            Jetzt Website erstellen lassen!
+            <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
