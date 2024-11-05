@@ -21,3 +21,6 @@ function toggleSelectedServiceSection(button){
     button.style.boxShadow = "var(--standard-accent-shadow)";
     button.style.color = "var(--white-text)";
 }
+
+
+

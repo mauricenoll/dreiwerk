@@ -50,6 +50,7 @@
 .logo-description{
     font-size: var(--medium-font-size);
     text-shadow: .05vw .05vw var(--text);
+    translate: 0 -1vh;
 }
 
 .logo-names{
@@ -90,6 +91,7 @@
     color: var(--white-text);
 }
 
+
 .nav-dropdown-text{
     font-family: "Orbitron", sans-serif;
     color: var(--white-text);
@@ -104,11 +106,19 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
+    padding: .35vw .8vw;
+    transition: 250ms box-shadow;
+    border-radius: .3vw;
+}
+
+.navigation-dropdown:hover{
+    box-shadow: 0 0 .3vw .1vw var(--accent-shadow);
 }
 
 .nav-dropdown-content {
     display: none;
     position: absolute;
+    translate: 0 .35vw;
     background-color: var(--dark-blue);
     z-index: 101;
     border-radius: .25vw;

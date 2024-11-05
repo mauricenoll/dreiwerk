@@ -6,15 +6,16 @@
     align-items: center;
 }
 
-.tech-stack-landing{
+.tech-stack-hero{
     background: rgb(0,204,153);
     background: linear-gradient(0deg, rgba(0,204,153,1) 0%, rgba(240,248,255,1) 70%);
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     padding: 8vh 0 5vh 0;
+    height: calc(100vh - var(--top-bar-height) - 13vh);
 
 }
 
@@ -28,13 +29,13 @@
 .tech-stack-landing-text{
     font-size: var(--medium-font-size);
     font-weight: bolder;
-    margin-top: 5vh;
     width: 50%;
     text-align: center;
+    letter-spacing: .075vw;
 }
 
 .tech-stack-row{
-    margin-top: 5vh;
+    margin-top: 2vh;
     width: 85%;
     display: flex;
     flex-direction: row;
@@ -52,6 +53,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#appdev .tech-stack-info-card{
+    justify-content: end;
 }
 
 .tech-stack-info-card-icon{
@@ -76,9 +81,130 @@
     text-align: center;
 }
 
+.tech-stack-info-sub-heading{
+    width: 100%;
+    font-weight: bold;
+    font-size: var(--medium-font-size);
+    font-family: "Orbitron", sans-serif;
+    color: var(--highlight);
+    text-align: center;
+}
+
 .tech-stack-info-text{
     margin-top: 1vh;
     font-size: var(--medium-font-size);
     text-align: center;
     width: 100%;
+}
+
+.info-heading-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+.tech-stacks{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2vh;
+    gap: 5vh;
+}
+
+.tech-stack-info-page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    padding-bottom: 8vh;
+    padding-top: 5vh;
+}
+
+
+.language-containers{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+    column-gap: 1vw;
+}
+
+
+.language-card{
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vh;
+    box-shadow: var(--standard-shadow);
+    border-radius: .25vw;
+    font-family: "Orbitron", sans-serif;
+    font-size: var(--medium-font-size);
+    font-weight: bold;
+    aspect-ratio: 1;
+}
+
+@keyframes fade-in {
+    from {scale: .7; opacity: 0; translate: -8vw 0;}
+    to {scale: 1; opacity: 1; translate: 0 0;}
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .language-card-animation{
+        animation: fade-in 1.25s 1;
+    }
+}
+
+
+.language-icon{
+    height: var(--very-large-font-size);
+}
+
+.tech-stack-info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    gap: 2vw;
+}
+
+.tech-stack-lang-heading{
+    font-weight: bold;
+    font-size: var(--very-large-font-size);
+    font-family: "Orbitron", sans-serif;
+}
+
+
+.tech-stack-lang-text{
+    font-weight: bolder;
+    font-size: var(--medium-font-size);
+    text-align: center;
+    width: 80%;
+}
+
+.interest-btn{
+    cursor: pointer;
+    font-size: var(--small-font-size);
+    border: none;
+    background: rgb(0,51,102);
+    background: linear-gradient(90deg, rgba(0,51,102,1) 2.5%, rgba(0,204,153,1) 90%);
+    color: var(--white-text);
+    font-weight: bold;
+    padding: 1vh 2vw 1vh 2vw;
+    border-radius: .5vw;
 }

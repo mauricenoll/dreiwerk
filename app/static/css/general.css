@@ -23,6 +23,7 @@
 
     --black-to-accent: brightness(0) saturate(100%) invert(50%) sepia(93%) saturate(1036%) hue-rotate(125deg) brightness(97%) contrast(103%);
     --black-to-highlight: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(4565%) hue-rotate(189deg) brightness(98%) contrast(101%);
+    --black-to-dark-blue: brightness(0) saturate(100%) invert(9%) sepia(92%) saturate(3727%) hue-rotate(200deg) brightness(95%) contrast(103%);
 
     --top-bar-height: 8vh;
 }

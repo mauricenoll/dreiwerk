@@ -201,7 +201,7 @@
 
 .button-icon{
     width: var(--medium-font-size);
-    filter: var(--black-to-highlight);
+    filter: var(--black-to-dark-blue);
 }
 
 .service-img{
@@ -209,6 +209,7 @@
     width: 80%;
     box-shadow: var(--standard-accent-shadow);
 }
+
 
 .icon-info-row{
     margin-top: 5vh;

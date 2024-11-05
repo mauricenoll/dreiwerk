@@ -23,13 +23,22 @@ def get_homepage(request: Request):
 
 @app.get("/tech-stack", response_class=HTMLResponse)
 def get_homepage(request: Request):
-
     context = {
         "request": request,
         "title": "Unser TechStack"
     }
 
     return server.templates.TemplateResponse(name="tech_stack.html", context=context, request=request)
+
+
+@app.get("/leistungen/", response_class=HTMLResponse)
+def get_leistungen(request: Request):
+    context = {
+        "request": request,
+        "title": "Unsere Leistungen"
+    }
+
+    return server.templates.TemplateResponse(name="services.html", context=context, request=request)
 
 
 if __name__ == "__main__":

@@ -17,14 +17,14 @@
 <div class="top-bar">
     <div class="logo-section">
         <div class="logo" onclick="window.open('/', '_top')">
-            <div class="logo-names">DreiWerk Solutions</div>
-            <div class="logo-description">SOFTWARE SERVICES</div>
+            <div class="logo-names">DreiWerk</div>
+            <div class="logo-description">SOFTWARE SOLUTIONS</div>
         </div>
     </div>
     <div class="navigation-section">
         <div class="navigation-button" onclick="navigate('/')">Home</div>
-        <div class="navigation-dropdown" onclick="navigate('/')">
-            <div class="nav-dropdown-info">
+        <div class="navigation-dropdown">
+            <div class="nav-dropdown-info" onclick="navigate('/leistungen/')">
                 <div class="nav-dropdown-text">Leistungen</div>
                 <img class="nav-dropdown-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_down.svg') }}">
             </div>

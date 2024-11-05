@@ -1,0 +1,67 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/services.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/services.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/services.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="services">
+    <div class="hero-section">
+        <div class="hero-sub-heading">Maßgeschneiderte Lösungen für Ihren Erfolg</div>
+        <div class="hero-heading">Unsere Leistungen</div>
+        <div class="hero-text">
+            Wir bieten Ihnen maßgeschneiderte digitale Lösungen, die Ihre Marke und Ihre Ziele optimal unterstützen. Unser Team gestaltet jede Anwendung mit einem Auge für Ästhetik und Benutzerfreundlichkeit, damit Ihre Kunden ein intuitives und hochwertiges Nutzererlebnis genießen können – ganz gleich, ob auf dem Smartphone, Tablet oder Desktop. Da jedes Projekt und jede Vision einzigartig sind, passen sich unsere Preise flexibel an die spezifischen Anforderungen und den Umfang der jeweiligen Lösung an. So erhalten Sie ein perfekt auf Sie abgestimmtes Produkt, das langfristig Mehrwert schafft.
+        </div>
+        <div class="button-with-svg">
+                Jetzt Vision verwirklichen!
+                <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+        </div>
+    </div>
+    <div class="services-overview">
+        <div class="services-overview-heading-section">
+            <div class="services-overview-heading">Unsere Leistungen im Überblick</div>
+            <div class="services-overview-text">
+                Hier finden Sie eine Übersicht unserer Dienstleistungen – von der individuellen Softwareentwicklung bis hin zu modernen Web- und App-Lösungen. Wir bieten maßgeschneiderte Ansätze, die perfekt auf Ihre Anforderungen abgestimmt sind und Ihr Projekt erfolgreich machen.
+            </div>
+        </div>
+        <div class="service-overview">
+            <div class="service-card">
+                <div class="service-title">Webdesign<br> </div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/website_icon.svg') }}">
+            </div>
+            <div class="service-card">
+                <div class="service-title">Enterprise Webdesign</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/laptop_icon.svg') }}">
+
+            </div>
+            <div class="service-card">
+                <div class="service-title">Website Betreuung</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/refresh.svg') }}">
+            </div>
+            <div class="service-card">
+                <div class="service-title">SEO-Optimierung</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/seo_icon.svg') }}">
+            </div>
+            <div class="service-card">
+                <div class="service-title">Individuelles Design</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/design_icon.svg') }}">
+            </div>
+            <div class="service-card">
+                <div class="service-title">App-Entwicklung</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/phone_icon.svg') }}">
+            </div>
+            <div class="service-card">
+                <div class="service-title">Individualsoftware</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/software_icon.svg') }}">
+            </div>
+            <div class="service-card">
+                <div class="service-title">DSGVO-Konform</div>
+                <img class="service-icon" alt="" src="{{ url_for('assets', path='/icons/protection_icon.svg') }}">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
