@@ -50,5 +50,16 @@ def get_service_web_development(request: Request):
 
     return server.templates.TemplateResponse(name="service_webdev.html", context=context, request=request)
 
+
+@app.get("/leistungen/app-entwicklung", response_class=HTMLResponse)
+def get_service_app_development(request: Request):
+    context = {
+        "request": request,
+        "title": "Appentwicklung"
+    }
+
+    return server.templates.TemplateResponse(name="service_appdev.html", context=context, request=request)
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=1337, forwarded_allow_ips=["*"], proxy_headers=True)

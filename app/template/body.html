@@ -17,8 +17,7 @@
 <div class="top-bar">
     <div class="logo-section">
         <div class="logo" onclick="window.open('/', '_top')">
-            <div class="logo-names">DreiWerk</div>
-            <div class="logo-description">SOFTWARE SOLUTIONS</div>
+            <img class="company-logo" alt="" src="{{ url_for('assets', path='/images/dreiwerk_short.svg') }}">
         </div>
     </div>
     <div class="navigation-section">
@@ -30,15 +29,19 @@
             </div>
             <div class="nav-dropdown-content">
                 <div class="nav-dropdown-content-div" onclick="navigate('/leistungen/web-entwicklung')"><div class="nav-dropdown-content-text">Webentwicklung</div> </div>
-                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">App-Entwicklung</div></div>
-                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">Individualsoftware</div></div>
-                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">SEO</div></div>
+                <div class="nav-dropdown-content-div" onclick="navigate('/leistungen/app-entwicklung')"><div class="nav-dropdown-content-text">App-Entwicklung</div></div>
+                <div class="nav-dropdown-content-div" onclick="navigate('/leistungen/individual-software')"><div class="nav-dropdown-content-text">Individualsoftware</div></div>
+<!--                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">SEO</div></div>-->
             </div>
         </div>
         <div class="navigation-button" onclick="navigate('/tech-stack')">Technologien</div>
         <div class="navigation-button" onclick="navigate('/')">Referenzen</div>
         <div class="navigation-button" onclick="navigate('/')">Über uns</div>
         <div class="navigation-button" onclick="navigate('/')">Kontakt</div>
+        <div class="navigation-button" id="request" onclick="navigate('/')">
+            Anfragen
+            <img class="arrow-icon" alt="" src="/assets/icons/arrow_right.svg">
+        </div>
     </div>
 </div>
 <div class="content">

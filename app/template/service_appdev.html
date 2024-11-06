@@ -1,0 +1,26 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/service_appdev.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/service_appdev.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/service_appdev.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
+<div class="service-appdev">
+    <div class="appdev-hero-section">
+        <div class="typewriter">
+            <div class="appdev-hero-heading">App Entwicklung für die Zukunft</div>
+        </div>
+        <div class="appdev-hero-text">
+            Mit modernsten Technologien und ansprechendem Design bringen wir Ihre App-Idee auf das nächste Level. Von der Konzeptphase bis zur Markteinführung entwickeln wir maßgeschneiderte Apps, die nicht nur gut aussehen, sondern auch langfristig bestehen. Unser Team setzt auf zukunftssichere Technologien und intuitive Benutzeroberflächen, um Ihren Nutzern eine nahtlose und begeisternde Erfahrung zu bieten. Lassen Sie uns gemeinsam Ihre Vision in eine leistungsstarke App verwandeln.
+        </div>
+        <div class="button-with-svg" id="appdev-hero">
+            Jetzt App entwickeln lassen!
+            <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

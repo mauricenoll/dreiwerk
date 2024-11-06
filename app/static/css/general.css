@@ -12,7 +12,7 @@
     --accent-shadow: rgba(0, 204, 153, .65);
 
     --small-font-size: .677vw; /*13px*/
-    --medium-font-size: .895vw; /*17px*/
+    --medium-font-size: .98vw; /*19px*/
     --big-font-size: 1.25vw; /*24px*/
     --large-font-size: 1.89vw; /*36px*/
     --very-large-font-size: 2.6vw; /*50px*/
@@ -55,4 +55,30 @@ p{
 
 button:focus{
     outline: none;
+}
+
+.button-with-svg{
+    margin-top: 5vh;
+    padding: 1vh .75vw;
+    font-size: var(--big-font-size);
+    font-weight: bolder;
+    color: var(--dark-blue);
+    font-family: Nunito Sans, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-bottom: .1vw solid var(--accent);
+    transition: 450ms translate;
+    display: flex;
+    flex-direction: row;
+    gap: .5vw;
+}
+
+.button-with-svg:hover{
+    translate: 0 -2vh;
+}
+
+.button-icon{
+    width: var(--medium-font-size);
+    filter: var(--black-to-dark-blue);
 }
