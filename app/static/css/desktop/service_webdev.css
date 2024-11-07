@@ -29,7 +29,7 @@
 }
 
 .hero-text{
-    color: var(--white-text);
+    color: var(--dark-blue);
     font-size: var(--medium-font-size);
     margin-top: 3vh;
     margin-bottom: 3vh;

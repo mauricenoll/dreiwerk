@@ -1,10 +1,7 @@
 import uvicorn
 
-from fastapi import FastAPI, HTTPException, Request, Response, Depends
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, FileResponse
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse, RedirectResponse
 
 import app.utils.app_setup as server
 
@@ -59,6 +56,84 @@ def get_service_app_development(request: Request):
     }
 
     return server.templates.TemplateResponse(name="service_appdev.html", context=context, request=request)
+
+
+@app.get("/leistungen/individual-software", response_class=HTMLResponse)
+def get_service_app_development(request: Request):
+
+    context = {
+        "request": request,
+        "title": "Individual-Software"
+    }
+
+    return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+
+
+# @app.get("/referenzen", response_class=HTMLResponse)
+# def get_references(request: Request):
+#     context = {
+#         "request": request,
+#         "title": "Referenzen"
+#     }
+#
+#     return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+
+
+@app.get("/about-us", response_class=HTMLResponse)
+def get_about_us(request: Request):
+    context = {
+        "request": request,
+        "title": "Über uns"
+    }
+
+    return server.templates.TemplateResponse(name="about_us.html", context=context, request=request)
+
+
+@app.get("/kontakt", response_class=HTMLResponse)
+def get_contact(request: Request):
+    context = {
+        "request": request,
+        "title": "Kontakt"
+    }
+
+    return server.templates.TemplateResponse(name="contact.html", context=context, request=request)
+
+
+@app.get("/impressum", response_class=HTMLResponse)
+def get_contact(request: Request):
+    context = {
+        "request": request,
+        "title": "Impressum"
+    }
+
+    return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+
+
+@app.get("/datenschutz", response_class=HTMLResponse)
+def get_contact(request: Request):
+    context = {
+        "request": request,
+        "title": "Datenschutz"
+    }
+
+    return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+
+
+@app.get("/not-found", response_class=HTMLResponse)
+def get_contact(request: Request):
+    context = {
+        "request": request,
+        "title": "404 Not found"
+    }
+
+    return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+
+
+@app.get("/{full_path:path}")
+def catch_all(full_path: str):
+    # catches all routes not defined above.
+    # any routes defined below will not be accessed since this catches it before
+    return RedirectResponse(url="/not-found")
 
 
 if __name__ == "__main__":

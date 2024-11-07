@@ -1,0 +1,79 @@
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+
+}
+
+.hero-section{
+    width: 100%;
+    height: 65vh;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,204,153);
+    background: linear-gradient(200deg, rgba(0,204,153,1) 40%, rgba(242,242,242,1) 100%);
+}
+
+.hero-big-heading{
+    font-size: var(--humongous-font-size);
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    color: var(--white-text);
+}
+
+.hero-heading{
+    font-size: var(--large-font-size);
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    color: var(--white-text);
+}
+
+.hero-text{
+    width: 50%;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    color: var(--dark-blue);
+    font-weight: bolder;
+    font-size: var(--medium-font-size);
+    text-align: center;
+}
+
+.icon-row{
+    border-top: .1vw solid var(--accent);
+    border-bottom: .1vw solid var(--accent);
+    margin-top: 3vh;
+    width: 100%;
+    height: 15vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--standard-shadow);
+    padding: 2vh 0;
+}
+
+.info-icon-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1vw;
+    align-items: center;
+    width: 25%;
+}
+
+.icon{
+    height: var(--humongous-font-size);
+    filter: var(--black-to-dark-blue);
+}
+
+.icon-text{
+    text-align: start;
+    font-size: var(--medium-font-size);
+}

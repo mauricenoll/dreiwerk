@@ -82,3 +82,15 @@ button:focus{
     width: var(--medium-font-size);
     filter: var(--black-to-dark-blue);
 }
+
+.gradient-btn{
+    cursor: pointer;
+    font-size: var(--medium-font-size);
+    color: var(--white-text);
+    font-weight: bold;
+    border: none;
+    border-radius: .5vw;
+    padding: .75vh 2vw;
+    background: rgb(0,51,102);
+    background: linear-gradient(90deg, rgba(0,51,102,1) 5%, rgba(0,204,153,1) 100%);
+}

@@ -1,0 +1,49 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/about_us.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/about_us.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/about_us.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
+<div class="about-us">
+  <div class="hero-section">
+    <div class="hero-big-heading">DreiWerk</div>
+    <div class="hero-heading">Wer wir sind</div>
+    <div class="hero-text">
+      Wir sind DreiWerk – drei Freunde, die sich seit der Schulzeit kennen und die Leidenschaft für Software teilen. Felix kümmert sich um das Management, während Maurice und Henry die technische Umsetzung übernehmen. Gemeinsam haben wir DreiWerk gegründet, um unsere Begeisterung für Software und Design zu verwirklichen und die Ideen unserer Kunden in die Realität umzusetzen.
+      <br><br>
+      Unser Ziel ist es, nicht nur Software zu entwickeln, sondern Lösungen zu schaffen, die nachhaltig begeistern und wirklich einen Unterschied machen. Lassen Sie uns Ihre Vision zum Leben erwecken!
+    </div>
+  </div>
+  <div class="icon-row">
+    <div class="info-icon-card">
+      <img class="icon" alt="" src="/assets/icons/handshake_2.svg">
+      <div class="icon-text">
+        <strong>Zuverlässigkeit & Engagement</strong>
+        <br>
+        Wir stehen zu unserem Wort und geben alles, um die besten Ergebnisse für unsere Kunden zu erreichen.
+      </div>
+    </div>
+    <div class="info-icon-card">
+      <img class="icon" alt="" src="/assets/icons/finish_line.svg">
+      <div class="icon-text">
+        <strong>Kundenzufriedenheit an erster Stelle</strong>
+        <br>
+        Ihr Erfolg ist unser Antrieb. Deshalb richten wir unsere Arbeit ganz nach Ihren Wünschen und Zielen aus.
+      </div>
+    </div>
+    <div class="info-icon-card">
+      <img class="icon" alt="" src="/assets/icons/lightbulb.svg">
+      <div class="icon-text">
+        <strong>Innovation & Leidenschaft</strong>
+        <br>
+        Mit Begeisterung und Kreativität entwickeln wir Lösungen, die zukunftssicher und individuell auf Ihre Bedürfnisse abgestimmt sind.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

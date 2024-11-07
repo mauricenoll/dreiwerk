@@ -54,8 +54,47 @@
     font-weight: bolder;
     font-size: var(--medium-font-size);
     margin-top: 6vh;
+    color: var(--dark-blue);
 }
 
 #appdev-hero{
     border-bottom-color: var(--dark-blue);
+}
+
+.appdev-info-section{
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.app-image{
+    max-height: 60vh;
+    border-radius: .6vw;
+}
+
+.appdev-info-text-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#info{
+    color: var(--text);
+    text-align: center;
+}
+
+#info-text{
+    width: 80%;
+
+}
+
+#termin-btn{
+    margin: 6vh 0;
 }

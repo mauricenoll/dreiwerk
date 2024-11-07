@@ -1,0 +1,66 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/service_custom_dev.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/service_custom_dev.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/service_custom_dev.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
+<div class="service-custom-dev">
+    <div class="custom-dev-hero-section">
+        <div class="hero-heading">Individuelle Softwarelösungen</div>
+        <div class="hero-text">
+            Jedes Unternehmen hat einzigartige Anforderungen – und wir entwickeln maßgeschneiderte Software, die genau auf Ihre Bedürfnisse zugeschnitten ist. Ob Management-Tools, Automatisierung von Geschäftsprozessen oder umfassende Unternehmenslösungen: Unsere individuelle Software schafft Effizienz und ermöglicht Ihnen, Ihre Abläufe zu optimieren.
+            <br><br>
+            Mit modernsten Technologien und einem tiefen Verständnis für Ihre Branche entwickeln wir Lösungen, die Ihr Unternehmen voranbringen und zukunftssicher sind. Lassen Sie uns gemeinsam Ihre Prozesse digitalisieren und Ihnen die Werkzeuge bieten, um Ihre Ziele noch besser zu erreichen.
+        </div>
+    </div>
+    <div class="bullet-point-section">
+        <div class="hero-heading" id="bullets">Was wir Ihnen bieten</div>
+        <div class="bullet-point-row">
+            <img class="bullet-point-icn" alt="" src="{{ url_for('assets', path='/icons/design_icon.svg') }}">
+            <div class="bullet-point-text">
+                <strong>Maßgeschneiderte Unternehmenssoftware:</strong> Entwicklung von Softwarelösungen, die genau auf die spezifischen Anforderungen Ihres Unternehmens abgestimmt sind.
+            </div>
+        </div>
+        <div class="bullet-point-row">
+            <img class="bullet-point-icn" alt="" src="{{ url_for('assets', path='/icons/automation.svg') }}">
+            <div class="bullet-point-text">
+                <strong>Automatisierung von Geschäftsprozessen:</strong> Effizienzsteigerung durch Software, die repetitive Aufgaben automatisiert und Ihre Arbeitsabläufe optimiert.
+            </div>
+        </div>
+        <div class="bullet-point-row">
+            <img class="bullet-point-icn" alt="" src="{{ url_for('assets', path='/icons/data_icon.svg') }}">
+            <div class="bullet-point-text">
+                <strong>Datenmanagement und Analyse:</strong> Erstellung von Tools zur Datenverarbeitung und Analyse, die Ihnen helfen, fundierte Geschäftsentscheidungen zu treffen.
+            </div>
+        </div>
+        <div class="bullet-point-row">
+            <img class="bullet-point-icn" alt="" src="{{ url_for('assets', path='/icons/api_icon.svg') }}">
+            <div class="bullet-point-text">
+                <strong>Schnittstellen-Integration:</strong> Nahtlose Integration mit bestehenden Systemen und Drittanbietern für eine einheitliche, vernetzte Arbeitsumgebung.
+            </div>
+        </div>
+        <div class="bullet-point-row">
+            <img class="bullet-point-icn" alt="" src="{{ url_for('assets', path='/icons/flexibility.svg') }}">
+            <div class="bullet-point-text">
+                <strong>Skalierbarkeit und Flexibilität:</strong> Unsere Softwarelösungen sind so konzipiert, dass sie mit Ihrem Unternehmen wachsen und sich an veränderte Anforderungen anpassen.
+            </div>
+        </div>
+        <div class="bullet-point-row">
+            <img class="bullet-point-icn" alt="" src="{{ url_for('assets', path='/icons/support.svg') }}">
+            <div class="bullet-point-text">
+                <strong>Langfristiger Support und Weiterentwicklung:</strong> Laufende Betreuung und Updates, damit Ihre Software immer auf dem neuesten Stand und zukunftssicher bleibt.
+            </div>
+        </div>
+        <div class="button-with-svg">
+            Jetzt Beraten lassen!
+            <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

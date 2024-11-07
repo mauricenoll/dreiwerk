@@ -1,0 +1,13 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/contact.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/contact.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/contact.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
+<div class="contact">
+</div>
+
+{% endblock %}

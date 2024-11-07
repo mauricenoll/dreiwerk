@@ -9,8 +9,11 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    # no wildcards here not allowed with allow_credentials = True; more can be added
+    allow_methods=["GET", "OPTIONS"],
+    # no wildcards are also better here
+    allow_headers=["Access-Control-Allow-Headers", 'Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
+
 )
 
 app.mount("/css/mobile", StaticFiles(directory="static/css/mobile"), name="mobile")

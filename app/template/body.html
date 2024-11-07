@@ -31,14 +31,13 @@
                 <div class="nav-dropdown-content-div" onclick="navigate('/leistungen/web-entwicklung')"><div class="nav-dropdown-content-text">Webentwicklung</div> </div>
                 <div class="nav-dropdown-content-div" onclick="navigate('/leistungen/app-entwicklung')"><div class="nav-dropdown-content-text">App-Entwicklung</div></div>
                 <div class="nav-dropdown-content-div" onclick="navigate('/leistungen/individual-software')"><div class="nav-dropdown-content-text">Individualsoftware</div></div>
-<!--                <div class="nav-dropdown-content-div" onclick="navigate('/')"><div class="nav-dropdown-content-text">SEO</div></div>-->
             </div>
         </div>
         <div class="navigation-button" onclick="navigate('/tech-stack')">Technologien</div>
-        <div class="navigation-button" onclick="navigate('/')">Referenzen</div>
-        <div class="navigation-button" onclick="navigate('/')">Über uns</div>
-        <div class="navigation-button" onclick="navigate('/')">Kontakt</div>
-        <div class="navigation-button" id="request" onclick="navigate('/')">
+<!--        <div class="navigation-button" onclick="navigate('/referenzen')">Referenzen</div>-->
+        <div class="navigation-button" onclick="navigate('/about-us')">Über uns</div>
+        <div class="navigation-button" onclick="navigate('/kontakt')">Kontakt</div>
+        <div class="navigation-button" id="request" onclick="navigate('/kontakt')">
             Anfragen
             <img class="arrow-icon" alt="" src="/assets/icons/arrow_right.svg">
         </div>
@@ -49,7 +48,33 @@
     {% endblock %}
 </div>
 <div class="bottom-bar">
+    <div class="bottom-bar-row">
+        <div class="company-link-section">
+            <div class="bottom-bar-heading">Im Überblick</div>
+            <a class="bottom-bar-nav-link" href="/">Home</a>
+            <a class="bottom-bar-nav-link" href="/leistungen/">Leistungen</a>
+            <a class="bottom-bar-nav-link" href="/leistungen/web-entwicklung">Web-Entwicklung</a>
+            <a class="bottom-bar-nav-link" href="/leistungen/app-entwicklung">App-Entwicklung</a>
+            <a class="bottom-bar-nav-link" href="/leistungen/índividual-software">Individual-Software</a>
+            <a class="bottom-bar-nav-link" href="/tech-stack">Technologien</a>
+<!--            <a class="bottom-bar-nav-link" href="/referenzen">Referenzen</a>-->
+            <a class="bottom-bar-nav-link" href="/about-us">Über uns</a>
 
+        </div>
+        <div class="company-info-section">
+            <div class="bottom-bar-heading">Kontakt</div>
+            <a class="bottom-bar-nav-link" href="tel:0123456789">0123456789</a>
+            <a class="bottom-bar-nav-link" href="mailto:info@dreiwerk-solutions.de">info@dreiwerk-solutions.de</a>
+        </div>
+    </div>
+    <div class="bottom-bar-row">
+        <div class="copyright-text">Copyright © 2024 DreiWerk Solutions</div>
+        <div class="bottom-link-section">
+            <a class="bottom-bar-link" href="/impressum">Impressum</a>
+            <a class="bottom-bar-link" href="/datenschutz">Datenschutz</a>
+            <img class="circ-animation-icon" alt="" src="{{ url_for('assets', path='/icons/instagram_icon.svg') }}">
+        </div>
+    </div>
 </div>
 </body>
 </html>
