@@ -20,25 +20,23 @@
             Machen Sie den nächsten Schritt! Sichern Sie sich eine persönliche Beratung und entdecken Sie, wie wir Ihnen dabei helfen, neue Wege zu gehen.
         </p>
 
-        <button class="secure-consultation-btn">Jetzt Beratung sichern!</button>
+        <button class="secure-consultation-btn" onclick="navigate('/kontakt')">Jetzt Beratung sichern!</button>
     </div>
-<!-- TODO: wrap-->
     <div class="service-selection-row">
         <button class="service-selection-btn" id="webdev" onclick="toggleSelectedServiceSection(this)">Web-Entwicklung</button>
         <button class="service-selection-btn" id="appdev" onclick="toggleSelectedServiceSection(this)">App-Entwicklung</button>
         <button class="service-selection-btn" id="softwaredev" onclick="toggleSelectedServiceSection(this)">Individualsoftware</button>
     </div>
-<!-- TODO: wrap-->
     <div class="service-info-container" id="webdev-container">
         <div class="text-section">
             <div class="service-info-heading">Eine Website nach Ihrer Vision</div>
             <div class="more-info-div">
-                <button class="more-info-btn">Mehr erfahren?</button>
+                <button class="more-info-btn" onclick="navigate('leistungen/web-entwicklung')">Mehr erfahren?</button>
             </div>
             <div class="service-info-text">
                 Wir entwickeln individuelle, leistungsstarke Webseiten, die Ihre Marke perfekt präsentieren.<br> Von modernen Designs bis hin zu maßgeschneiderten Funktionen – wir schaffen digitale Erlebnisse, die beeindrucken und Ihre Zielgruppe ansprechen. Lassen Sie uns gemeinsam Ihre Vision verwirklichen.
             </div>
-            <div class="button-with-svg">
+            <div class="button-with-svg" onclick="navigate('/kontakt')">
                 Jetzt Vision verwirklichen!
                 <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
             </div>
@@ -51,12 +49,12 @@
         <div class="text-section">
             <div class="service-info-heading">Innovative App-Lösungen für Ihren Erfolg</div>
             <div class="more-info-div">
-                <button class="more-info-btn">Mehr erfahren?</button>
+                <button class="more-info-btn" onclick="navigate('/leistungen/app-entwicklung')">Mehr erfahren?</button>
             </div>
             <div class="service-info-text">
                 Wir erstellen maßgeschneiderte Apps, die Ihre Zielgruppe erreichen und begeistern. Ob iOS, Android oder plattformübergreifend – mit innovativem Design und intuitiver Benutzerführung entwickeln wir Lösungen, die sich an Ihren Bedürfnissen orientieren und echte Mehrwerte schaffen.
             </div>
-            <div class="button-with-svg">
+            <div class="button-with-svg" onclick="navigate('/kontakt')">
                 Jetzt Vision verwirklichen!
                 <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
             </div>
@@ -69,12 +67,12 @@
         <div class="text-section">
             <div class="service-info-heading">Maßgeschneiderte Softwarelösungen für Ihr Unternehmen</div>
             <div class="more-info-div">
-                <button class="more-info-btn">Mehr erfahren?</button>
+                <button class="more-info-btn" onclick="navigate('/leistungen/individual-software')">Mehr erfahren?</button>
             </div>
             <div class="service-info-text">
                 Wir entwickeln individuelle Software, die genau auf Ihre Geschäftsprozesse zugeschnitten ist – ob Verwaltungstools, Managementlösungen oder spezifische Anwendungen. Mit unserem Know-how schaffen wir Systeme, die Ihre Effizienz steigern und Arbeitsabläufe optimieren.
             </div>
-            <div class="button-with-svg">
+            <div class="button-with-svg" onclick="navigate('/kontakt')">
                 Jetzt Anfrage stellen!
                 <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
             </div>
@@ -140,7 +138,7 @@
             </div>
         </div>
 
-        <button class="contact-us-btn">Noch Fragen? <u>Kontaktieren</u> Sie uns!</button>
+        <button class="contact-us-btn" onclick="navigate('/kontakt')">Noch Fragen? <u>Kontaktieren</u> Sie uns!</button>
 
 
     </div>

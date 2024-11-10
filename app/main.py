@@ -1,6 +1,6 @@
 import uvicorn
-
-from fastapi import FastAPI, Request
+from typing import Annotated
+from fastapi import Request, Response, status, Form
 from fastapi.responses import HTMLResponse, RedirectResponse
 
 import app.utils.app_setup as server
@@ -69,14 +69,6 @@ def get_service_app_development(request: Request):
     return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
 
 
-# @app.get("/referenzen", response_class=HTMLResponse)
-# def get_references(request: Request):
-#     context = {
-#         "request": request,
-#         "title": "Referenzen"
-#     }
-#
-#     return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
 
 
 @app.get("/about-us", response_class=HTMLResponse)
@@ -99,6 +91,22 @@ def get_contact(request: Request):
     return server.templates.TemplateResponse(name="contact.html", context=context, request=request)
 
 
+@app.post("/kontakt")
+async def send_contact_msg(request: Request, response: Response, anrede: Annotated[str, Form()], name: Annotated[str, Form()], email: Annotated[str, Form()], num: Annotated[str, Form()], msg: Annotated[str, Form()],):
+    print({
+        "anrede": anrede,
+        "name": name,
+        "email": email,
+        "tel-num": num,
+        "msg": msg
+    })
+
+    # TODO: mail handler
+
+    response.status_code = status.HTTP_202_ACCEPTED
+    return response
+
+
 @app.get("/impressum", response_class=HTMLResponse)
 def get_contact(request: Request):
     context = {
@@ -106,7 +114,7 @@ def get_contact(request: Request):
         "title": "Impressum"
     }
 
-    return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+    return server.templates.TemplateResponse(name="impressum.html", context=context, request=request)
 
 
 @app.get("/datenschutz", response_class=HTMLResponse)
@@ -116,7 +124,7 @@ def get_contact(request: Request):
         "title": "Datenschutz"
     }
 
-    return server.templates.TemplateResponse(name="service_custom_dev.html", context=context, request=request)
+    return server.templates.TemplateResponse(name="datenschutz.html", context=context, request=request)
 
 
 @app.get("/not-found", response_class=HTMLResponse)

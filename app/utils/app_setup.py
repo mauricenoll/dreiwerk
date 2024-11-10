@@ -10,7 +10,7 @@ app.add_middleware(
     allow_origins=["*"],
     allow_credentials=True,
     # no wildcards here not allowed with allow_credentials = True; more can be added
-    allow_methods=["GET", "OPTIONS"],
+    allow_methods=["GET", "OPTIONS", "POST"],
     # no wildcards are also better here
     allow_headers=["Access-Control-Allow-Headers", 'Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
 

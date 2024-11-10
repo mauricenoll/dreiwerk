@@ -1,0 +1,208 @@
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact-hero{
+    width: 100%;
+    height: 60vh;
+    background: rgb(0,204,153);
+    background: linear-gradient(200deg, rgba(0,204,153,1) 40%, rgba(242,242,242,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-hero-heading{
+    font-size: var(--humongous-font-size);
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    color: var(--white-text);
+}
+
+.contact-section{
+    width: 75%;
+    height: 100%;
+    padding: 4vh 2.5vw 8vh 2.5vw;
+    border-radius: .6vw;
+    translate: 0 -16vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+    box-shadow: var(--standard-shadow);
+}
+
+.contact-info{
+    height: 60vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-info-heading, .success-msg{
+    margin-bottom: 8vh;
+    font-family: "Orbitron", sans-serif;
+    font-size: var(--large-font-size);
+    color: var(--accent);
+}
+
+.link-with-icon{
+    font-size: var(--medium-font-size);
+    color: var(--text);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .25vw;
+    text-decoration: none;
+    margin-bottom: 2vh;
+}
+
+.icon{
+    width: var(--big-font-size);
+    filter: var(--black-to-accent);
+
+}
+
+.contact-form{
+    padding-top: 8vh;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.salutation-selection{
+    padding: 1.25vh 0 1.25vh 2vw;
+    width: 100%;
+    font-size: var(--big-font-size);
+    font-family: Nunito Sans, sans-serif;
+    border: none;
+    border-bottom: .125vw solid var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.salutation-selection:focus{
+    outline: none;
+    border: .05vw solid var(--dark-blue);
+    border-bottom: .125vw solid var(--dark-blue);
+    border-radius: .2vw;
+}
+
+
+.contact-form-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.text-input{
+    padding: 1.25vh 0 1.25vh 1vw;
+    width: 100%;
+    font-size: var(--big-font-size);
+    font-family: Nunito Sans, sans-serif;
+    border: none;
+    border-bottom: .125vw solid var(--dark-blue);
+    border-color: var(--dark-blue);
+    margin: 0;
+}
+
+.input-div{
+    height: 8vh;
+    margin: 0;
+    width: calc(50% - 1vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#checkbox-input, #msg-input{
+    width: 100%;
+}
+
+#msg-input{
+    min-height: 25vh;
+}
+
+.input-error-msg{
+
+    font-size: var(--small-font-size);
+    color: red;
+    text-align: left;
+}
+
+.text-input:focus{
+    outline: none;
+    border: .05vw solid var(--dark-blue);
+    border-bottom: .125vw solid var(--dark-blue);
+    border-radius: .2vw;
+}
+
+.message{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: var(--medium-font-size);
+    font-family: Nunito Sans, sans-serif;
+    resize: vertical;
+    height: 25vh;
+    padding: 1vh 1vw;
+    min-height: 15vh;
+    max-height: 75vh;
+}
+
+.submit-btn{
+    width: 100%;
+    font-size: var(--big-font-size);
+    font-weight: bold;
+    font-family: Nunito Sans, sans-serif;
+    color: var(--dark-blue);
+    background-color: var(--accent);
+    padding: 2vh 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 4vh;
+}
+
+.success-msg{
+    text-align: center;
+    display: none;
+    width: 60%;
+}
+
+.label-row{
+    cursor: pointer;
+}
+
+.data-protection-checkbox{
+    width: var(--medium-font-size);
+    cursor: pointer;
+}
+
+.error-msg{
+    display: none;
+    width: 100%;
+    color: red;
+    font-size: var(--big-font-size);
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+

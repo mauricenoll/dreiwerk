@@ -8,6 +8,69 @@
 
 {% block content %}
 <div class="contact">
+    <div class="contact-hero">
+        <div class="contact-hero-heading">Kontakt</div>
+    </div>
+    <div class="contact-section">
+        <div class="contact-info">
+            <div class="contact-info-heading">Jetzt Kontakt zu uns aufnehmen!</div>
+            <a class="link-with-icon" href="mailto:info@dreiwerk-solutions.de">
+                <img class="icon" alt="mail-icon" src="/assets/icons/email_icon.svg">
+                info@dreiwerk-solutions.de
+            </a>
+            <a class="link-with-icon" href="tel:017670234154">
+                <img class="icon" alt="phone-icon" src="/assets/icons/phone_icon.svg">
+                017670234154
+            </a>
+        </div>
+        <div class="contact-form" id="contact_form">
+            <div class="error-msg" id="error_msg"></div>
+            <div class="contact-form-row">
+                <div class="input-div">
+                    <label for="anrede"></label>
+                    <select class="salutation-selection" name="anrede" id="anrede">
+                        <option value="Herr">Herr</option>
+                        <option value="Frau">Frau</option>
+                        <option value="Divers">Divers</option>
+                    </select>
+                </div>
+                <div class="input-div">
+                    <input class="text-input" type="text" name="name" id="name" placeholder="Vor - und Nachname*" onkeydown="resetErrorMsg('name_input_err')">
+                    <div class="input-error-msg" id="name_input_err"></div>
+                    <label for="name" id="name_label"></label>
+                </div>
+            </div>
+            <div class="contact-form-row">
+                <div class="input-div">
+                    <input class="text-input" type="email" name="email" id="email" placeholder="E-Mail*" onkeydown="resetErrorMsg('email_input_err')">
+                    <div class="input-error-msg" id="email_input_err"></div>
+                    <label for="email" id="email_label"></label>
+                </div>
+                <div class="input-div">
+                    <label for="number"></label>
+                    <input class="text-input" type="tel" name="number" id="number" placeholder="Telefonnummer">
+                </div>
+            </div>
+            <div class="input-div" id="msg-input">
+                <textarea class="message" id="message" placeholder="Ihre Nachricht*" onkeydown="resetErrorMsg('msg_input_err')"></textarea>
+                <div class="input-error-msg" id="msg_input_err"></div>
+                <label for="message" id="message_label"></label>
+            </div>
+            <div class="input-div" id="checkbox-input">
+                <label for="data-protection-checkbox" class="label-row">
+                    <input type="checkbox" id="data-protection-checkbox" onchange="resetErrorMsg('checkbox_input_err')">
+                    Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner
+                    Anfrage elektronisch erhoben und gespeichert werden. Sie können Ihre Einwilligung jederzeit
+                    für die Zukunft widerrufen.*
+                </label>
+                <div class="input-error-msg" id="checkbox_input_err"></div>
+            </div>
+            <button class="submit-btn" onclick="sendMsg()">Senden</button>
+
+        </div>
+        <div class="success-msg" id="success_msg">Danke für deine Anfrage :)!<br><br>Du solltest eine E-Mail bekommen haben, wir bearbeiten deine Anfrage so schnell wie möglich.</div>
+    </div>
+
 </div>
 
 {% endblock %}

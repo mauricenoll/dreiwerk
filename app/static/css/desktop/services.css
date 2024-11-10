@@ -21,17 +21,20 @@
 .hero-sub-heading{
     font-size: var(--medium-font-size);
     font-weight: bolder;
+    color: var(--white-text);
 }
 
 .hero-heading{
     font-size: var(--very-large-font-size);
     font-weight: bold;
     font-family: "Orbitron", sans-serif;
+    color: var(--white-text);
 }
 
 .hero-text{
     font-size: var(--medium-font-size);
     width: 45%;
+    color: var(--dark-blue);
     text-align: center;
     margin-top: 5vh;
     font-weight: bolder;
