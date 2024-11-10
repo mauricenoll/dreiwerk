@@ -1,0 +1,66 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .tech-stack-hero{
+        padding: 4vh 0 9vh 0;
+    }
+
+    .tech-stack-landing-heading{
+        font-size: var(--half-large-font-size);
+    }
+
+    .tech-stack-landing-text{
+        width: 65%;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .tech-stack-info-heading{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .tech-stack-info-sub-heading{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .tech-stack-info-text{
+        font-size: var(--half-small-font-size);
+    }
+
+    .tech-stacks{
+        width: 85%;
+    }
+
+    .language-containers{
+        width: 40%;
+    }
+
+    .language-card{
+        width: 6.5vw;
+        height: 6.5vw;
+        font-size: var(--half-small-font-size);
+    }
+
+    .language-icon{
+        height: var(--half-very-large-font-size);
+    }
+
+    .tech-stack-lang-heading{
+        font-size: var(--half-large-font-size);
+    }
+
+    .tech-stack-lang-text{
+        font-size: var(--half-small-font-size);
+    }
+
+    .interest-btn{
+        font-size: var(--half-small-font-size);
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

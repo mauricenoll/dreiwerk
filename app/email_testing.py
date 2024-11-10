@@ -11,40 +11,21 @@ except ModuleNotFoundError:
     print("No auth module, no email pw")
 # TODO: create email handler, .env file, import keys/pw from there
 
-msg = MIMEMultipart('alternative')
+import mail_handler
+from mail_templates import contact_template
 
-me = 'basic@dreiwerk-solutions.de'
-you = 'info@dreiwerk-solutions.de'
-msg['Subject'] = "Testing email sending via python"
-msg['From'] = me
-msg['To'] = you
+handler = mail_handler.EmailHandler(myEmail=os.getenv("INFO_EMAIL"), password=os.getenv("INFO_PASSWORD"), mailHost=os.getenv("MAIL_HOST"), port=int(os.getenv("MAIL_PORT")))
 
-text = """
-This is a test email
-"""
+handler.send_mail('maurice-noll@mail.de', contact_template.get_contact_mail_template("Maurice Noll"), {
+        "anrede": "Herr",
+        "name": "maurice",
+        "email": "maurice-noll@mail.de",
+        "tel-num": "",
+        "msg": "Hallo ich interesiere mich für dinge",
+        "data_protection": True
+    })
 
-html = """
-<html>
-  <body>
-    <h1> This is test email </h1>
-  </body>
-</html>
-"""
 
-p1 = MIMEText(text, "plain")
-p2 = MIMEText(html, "html")
 
-msg.attach(p1)
-msg.attach(p2)
 
-mailserver = smtplib.SMTP('smtp.strato.de', 587)
 
-mailserver.ehlo()
-mailserver.starttls()
-mailserver.ehlo()
-
-mailserver.login(me, os.getenv("INFO_PASSWORD"))
-
-mailserver.sendmail(me, [you], msg.as_string())
-
-mailserver.quit()

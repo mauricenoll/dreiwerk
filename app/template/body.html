@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="{{ url_for('mobile', path='/body.css') }}" rel="stylesheet">
     <link href="{{ url_for('desktop', path='/body.css') }}" rel="stylesheet">
+    <link href="{{ url_for('mobile', path='/body.css') }}" rel="stylesheet">
     <link href="{{ url_for('css', path='/general.css') }}" rel="stylesheet">
     <link href="{{ url_for('css', path='/fonts.css') }}" rel="stylesheet">
     <script src="{{ url_for('js', path='/body.js') }}"></script>
@@ -37,7 +37,7 @@
 <!--        <div class="navigation-button" onclick="navigate('/referenzen')">Referenzen</div>-->
         <div class="navigation-button" onclick="navigate('/about-us')">Über uns</div>
         <div class="navigation-button" onclick="navigate('/kontakt')">Kontakt</div>
-        <div class="navigation-button" id="request" onclick="navigate('/kontakt')">
+        <div class="navigation-button" id="request" onclick="navigate('/anfrage')">
             Anfragen
             <img class="arrow-icon" alt="" src="/assets/icons/arrow_right.svg">
         </div>
@@ -59,11 +59,13 @@
             <a class="bottom-bar-nav-link" href="/tech-stack">Technologien</a>
 <!--            <a class="bottom-bar-nav-link" href="/referenzen">Referenzen</a>-->
             <a class="bottom-bar-nav-link" href="/about-us">Über uns</a>
+            <a class="bottom-bar-nav-link" href="/kontakt">Kontakt</a>
+            <a class="bottom-bar-nav-link" href="/anfrage">Anfrage</a>
 
         </div>
         <div class="company-info-section">
             <div class="bottom-bar-heading">Kontakt</div>
-            <a class="bottom-bar-nav-link" href="tel:0123456789">017670234154</a>
+            <a class="bottom-bar-nav-link" href="tel:017670234154">017670234154</a>
             <a class="bottom-bar-nav-link" href="mailto:info@dreiwerk-solutions.de">info@dreiwerk-solutions.de</a>
         </div>
     </div>

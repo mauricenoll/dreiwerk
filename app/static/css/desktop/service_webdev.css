@@ -60,6 +60,11 @@
     translate: 0 -2vh;
 }
 
+.button-with-svg a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .button-icon{
     width: var(--medium-font-size);
     filter: invert(1);

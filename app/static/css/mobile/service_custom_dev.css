@@ -1,0 +1,44 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .custom-dev-hero-section{
+        justify-content: center;
+        padding: 3vh 0 11vh 0;
+
+
+    }
+
+    .hero-heading{
+        font-size: var(--half-large-font-size);
+    }
+
+    .hero-text{
+        width: 70%;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .bullet-point-section{
+        width: 80%;
+        border-radius: 1vw;
+    }
+
+    .bullet-point-row{
+        width: 90%;
+    }
+
+    .bullet-point-icn{
+        width: var(--half-large-font-size);
+    }
+
+    .bullet-point-text{
+        font-size: var(--half-medium-font-size);
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

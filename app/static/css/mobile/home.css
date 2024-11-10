@@ -1,0 +1,118 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .homepage-container{
+        height: calc(100vh - var(--half-top-bar-height) - 15vh);
+    }
+
+    .homepage-heading{
+        font-size: var(--half-very-large-font-size);
+    }
+
+    .homepage-sub-heading{
+        font-size: var(--half-medium-font-size);
+    }
+
+    #lower{
+        font-size: var(--half-big-font-size);
+    }
+
+    .homepage-paragraph{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .secure-consultation-btn{
+        margin-top: 3vh;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .service-selection-row{
+        width: 80%;
+        padding: 2vh 10%;
+        justify-content: space-between;
+    }
+
+    .service-selection-btn{
+        font-size: var(--half-medium-font-size);
+        border-radius: .4vw;
+    }
+
+    .service-info-container{
+        margin-top: 3vh;
+        width: 85%;
+    }
+
+    .text-section{
+        width: 50%;
+    }
+
+    .service-info-heading{
+        font-size: var(--half-large-font-size);
+    }
+
+    .more-info-btn{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .service-info-text{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .button-with-svg {
+        font-size: var(--half-medium-font-size);
+
+    }
+
+    .button-icon{
+        width: var(--half-medium-font-size);
+    }
+
+    .icon-info-row{
+        width: 85%;
+    }
+
+    .info-icon-text{
+        font-size: var(--half-small-font-size);
+    }
+
+    .cooperation-div{
+        padding-bottom: 8vh;
+    }
+
+    .cooperation-heading{
+        font-size: var(--half-large-font-size);
+        text-align: center;
+    }
+
+    .cooperation-text{
+        width: 60%;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .step-by-step-div{
+        width: 90%;
+    }
+
+    .step-count{
+        font-size: var(--half-very-large-font-size);
+    }
+
+    .step-heading{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .step-container-text{
+        font-size: var(--half-small-font-size);
+    }
+
+    .contact-us-btn{
+        font-size: var(--half-small-font-size);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

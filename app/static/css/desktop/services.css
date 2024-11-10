@@ -16,12 +16,14 @@
     justify-content: start;
     align-items: center;
 
+
 }
 
 .hero-sub-heading{
     font-size: var(--medium-font-size);
     font-weight: bolder;
     color: var(--white-text);
+    font-family: "Orbitron", sans-serif;
 }
 
 .hero-heading{

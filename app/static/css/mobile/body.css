@@ -1,0 +1,81 @@
+@media screen and (max-width: 800px) and (min-width: 526px) {
+    .top-bar {
+        height: var(--half-top-bar-height);
+    }
+
+    .logo-section {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100%;
+        height: 80%;
+    }
+
+    .company-logo {
+        height: 80%;
+        width: 100%;
+    }
+
+    .navigation-section {
+        gap: .7vw;
+        width: 100%;
+        padding-right: 2.5%;
+    }
+
+    .navigation-button {
+        font-size: calc(var(--half-medium-font-size) - .15vw);
+    }
+
+    .nav-dropdown-text {
+        font-size: calc(var(--half-medium-font-size) - .15vw);
+    }
+
+    .nav-dropdown-content-div {
+        font-size: calc(var(--half-medium-font-size) - .15vw);
+        width: 70%;
+    }
+
+    .nav-dropdown-content {
+        min-width: 22.5vw;
+    }
+
+    .bottom-bar-nav-link {
+        font-size: var(--half-medium-font-size);
+    }
+
+    .bottom-bar-heading {
+        font-size: var(--half-small-font-size);
+    }
+
+    .company-link-section, .company-info-section{
+        width: 35%;
+    }
+
+    .copyright-text{
+        width: 90%;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .bottom-bar-link{
+        font-size: var(--half-medium-font-size);
+    }
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+    .top-bar{
+        height: var(--half-top-bar-height);
+        background-color: pink;
+    }
+
+}

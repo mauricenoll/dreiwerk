@@ -1,0 +1,32 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .datenschutz{
+        width: 90%;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
+    }
+
+    h1{
+        font-size: var(--half-very-large-font-size);
+    }
+
+    h2{
+        font-size: var(--half-large-font-size);
+    }
+
+    h3{
+        font-size: var(--half-big-font-size);
+    }
+
+    p, a, li{
+        font-size: var(--half-medium-font-size);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

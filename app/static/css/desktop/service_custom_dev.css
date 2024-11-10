@@ -38,6 +38,7 @@
 .bullet-point-section{
     background-color: var(--primary);
     width: 50%;
+    border-radius: .4vw;
     padding: 4vh 1vw 6vh 1vw;
     translate: 0 -15vh;
     box-shadow: var(--standard-shadow);

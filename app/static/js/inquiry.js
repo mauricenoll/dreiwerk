@@ -25,12 +25,19 @@ async function sendMsg(){
 
     let url = window.location.href;
 
+    document.body.style.cursor = "wait";
+
     let anrede = document.getElementById("anrede");
     let name = document.getElementById('name');
     let email = document.getElementById('email');
     let num = document.getElementById('number');
     let msg = document.getElementById('message');
 
+    let business_name = document.getElementById('business');
+    let branche = document.getElementById('branche');
+
+    let budget = document.getElementById('budget');
+    let interest = document.getElementById('sw_dev_type');
 
     let checkbox = document.getElementById('data-protection-checkbox');
 
@@ -46,7 +53,7 @@ async function sendMsg(){
         showRequiredField('msg_input_err');
         form_ok = false;
     }
-    console.log(checkbox.value);
+
     if(checkbox.checked === false){
         showRequiredField('checkbox_input_err');
         form_ok = false;
@@ -64,7 +71,10 @@ async function sendMsg(){
     formData.append("num", num.value);
     formData.append("msg", msg.value);
     formData.append("data_protection", checkbox.checked);
-
+    formData.append("business", business_name.value);
+    formData.append("branche", branche.value);
+    formData.append('budget', budget.value);
+    formData.append('interest', interest.value);
 
 
     try {
@@ -88,6 +98,8 @@ async function sendMsg(){
         displayErrorMessage("Etwas ist schief gelaufen, bitte versuche es später erneut!");
         console.log(e);
     }
+
+    document.body.style.cursor = "unset";
 
 
 

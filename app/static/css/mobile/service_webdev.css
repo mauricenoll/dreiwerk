@@ -1,0 +1,86 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .hero-section{
+        width: 90%;
+    }
+
+    .hero-heading{
+        font-size: var(--half-very-large-font-size);
+    }
+
+    .hero-text{
+        font-size: var(--half-medium-font-size);
+        width: 65%;
+    }
+
+    .button-with-svg{
+        font-size: var(--half-big-font-size);
+    }
+
+    .button-icon{
+        width: var(--half-big-font-size);
+    }
+
+    .professional-section{
+        width: 85%;
+    }
+
+    .professional-heading{
+        font-size: var(--half-large-font-size);
+        width: 80%;
+    }
+
+    .professional-text{
+        width: 80%;
+        font-size: var(--half-medium-font-size);
+        letter-spacing: inherit;
+    }
+
+    .professional-bullet-points{
+        width: 80%;
+    }
+
+    .bullet-point-icon{
+        width: var(--half-big-font-size);
+    }
+
+    .bullet-point-text{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .bullet-heading{
+        font-size: var(--half-big-font-size);
+    }
+
+    .slogan-heading{
+        width: 80%;
+        font-size: var(--half-large-font-size);
+    }
+
+    .slogan-row{
+        width: 90%;
+    }
+
+    .buttons-section{
+        width: 50%;
+    }
+
+    #big-logo{
+        width: 55%;
+        justify-content: center;
+    }
+
+    #big{
+        width: 80%;
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

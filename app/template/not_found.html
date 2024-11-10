@@ -1,0 +1,17 @@
+{% extends 'body.html' %}
+{% block head %}
+<link href="{{ url_for('desktop', path='/not_found.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/not_found.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="not-found">
+    <div class="big-404">404</div>
+    <div class="text-404">Leider ist diese Seite nicht verfügbar!</div>
+    <button class="back-button" onclick="navigate('/')">
+        Zurück! →
+    </button>
+
+</div>
+
+{% endblock %}

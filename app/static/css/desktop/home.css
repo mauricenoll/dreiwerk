@@ -20,6 +20,7 @@
 
 .homepage-heading{
     font-size: var(--humongous-font-size);
+    font-family: "Orbitron", sans-serif;
     font-weight: bold;
     text-align: center;
     color: var(--white-text);

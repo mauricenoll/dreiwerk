@@ -1,19 +1,19 @@
 {% extends 'body.html' %}
 {% block head %}
-<link href="{{ url_for('desktop', path='/contact.css') }}" rel="stylesheet">
-<link href="{{ url_for('mobile', path='/contact.css') }}" rel="stylesheet">
-<script src="{{ url_for('js', path='/contact.js') }}"></script>
+<link href="{{ url_for('desktop', path='/inquiry.css') }}" rel="stylesheet">
+<link href="{{ url_for('mobile', path='/inquiry.css') }}" rel="stylesheet">
+<script src="{{ url_for('js', path='/inquiry.js') }}"></script>
 
 {% endblock %}
 
 {% block content %}
-<div class="contact">
-    <div class="contact-hero">
-        <div class="contact-hero-heading">Kontakt</div>
+<div class="inquiry">
+    <div class="inquiry-hero">
+        <div class="inquiry-hero-heading">Anfrage</div>
     </div>
     <div class="contact-section">
         <div class="contact-info">
-            <div class="contact-info-heading">Jetzt Kontakt zu uns aufnehmen!</div>
+            <div class="contact-info-heading">Jetzt Anfrage stellen!</div>
             <a class="link-with-icon" href="mailto:info@dreiwerk-solutions.de">
                 <img class="icon" alt="mail-icon" src="/assets/icons/email_icon.svg">
                 info@dreiwerk-solutions.de
@@ -38,6 +38,41 @@
                     <input class="text-input" type="text" name="name" id="name" placeholder="Vor - und Nachname*" onkeydown="resetErrorMsg('name_input_err')">
                     <div class="input-error-msg" id="name_input_err"></div>
                     <label for="name" id="name_label"></label>
+                </div>
+            </div>
+            <div class="contact-form-row">
+                <div class="input-div">
+                    <input class="text-input" type="text" name="business" id="business" placeholder="Firma oder Organisation">
+                    <label for="business" id="business_label"></label>
+                </div>
+                <div class="input-div">
+                    <input class="text-input" type="text" name="branche" id="branche" placeholder="Branche">
+                    <div class="input-error-msg" id=""></div>
+                    <label for="branche"></label>
+                </div>
+            </div>
+            <div class="contact-form-row">
+                <div class="input-div">
+                    <select class="dropdown-menu" name="budget" id="budget">
+                        <option value="not-available">Keine Angabe</option>
+                        <option value="5-2.5k">500-2.500€</option>
+                        <option value="2.5k-5k">2.500-5.000€</option>
+                        <option value="5k-10k">5.000-10.000€</option>
+                        <option value="10k-25k">10.000-25.000€</option>
+                        <option value="25k-50k">25.000-50.000€</option>
+                        <option value="50k-100k">50.000-100.000€</option>
+                        <option value=">100k">mehr als 100.000€</option>
+                    </select>
+                    <label for="budget">Ihr Budget</label>
+                </div>
+                <div class="input-div">
+                    <select class="dropdown-menu" name="sw_dev_type" id="sw_dev_type">
+                        <option value="web-dev">Web-Entwicklung</option>
+                        <option value="app-dev">App-Entwicklung</option>
+                        <option value="sw-dev">Individualsoftware</option>
+                        <option value="different">Etwas anderes</option>
+                    </select>
+                    <label for="sw_dev_type">Ich interessiere mich für</label>
                 </div>
             </div>
             <div class="contact-form-row">

@@ -1,4 +1,4 @@
-.contact{
+.inquiry{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.contact-hero{
+.inquiry-hero{
     width: 100%;
     height: 60vh;
     background: rgb(0,204,153);
@@ -18,7 +18,7 @@
 
 }
 
-.contact-hero-heading{
+.inquiry-hero-heading{
     font-size: var(--humongous-font-size);
     font-weight: bold;
     font-family: "Orbitron", sans-serif;
@@ -205,4 +205,8 @@
     margin-bottom: 2vh;
 }
 
-
+label{
+    font-family: Nunito Sans, sans-serif;
+    font-size: var(--medium-font-size);
+    font-weight: bolder;
+}

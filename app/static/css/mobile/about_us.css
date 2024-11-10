@@ -1,0 +1,37 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .hero-big-heading{
+        font-size: var(--half-humongous-font-size);
+    }
+
+    .hero-heading{
+        font-size: var(--half-large-font-size);
+    }
+
+    .hero-text{
+        margin-top: 4vh;
+        width: 65%;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .icon-text{
+        font-size: var(--half-small-font-size);
+    }
+
+    .info-icon-card{
+        width: 30%;
+    }
+
+    .icon{
+        height: var(--half-very-large-font-size);
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

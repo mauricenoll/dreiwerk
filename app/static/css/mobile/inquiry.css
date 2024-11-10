@@ -1,9 +1,9 @@
 @media only screen and (max-width: 800px) and (min-width: 526px) {
-    .contact-hero{
+    .inquiry-hero{
         height: 50vh;
     }
 
-    .contact-hero-heading{
+    .inquiry-hero-heading{
         font-size: var(--half-humongous-font-size);
     }
 

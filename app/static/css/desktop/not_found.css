@@ -1,0 +1,35 @@
+.not-found{
+    width: 100%;
+    height: 92vh;
+    background: rgb(0,204,153);
+    background: linear-gradient(0deg, rgba(0,204,153,1) 0%, rgba(240,248,255,1) 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.big-404{
+    font-size: var(--humongous-font-size);
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.text-404{
+    color: var(--dark-blue);
+    font-weight: bolder;
+    font-size: var(--big-font-size);
+}
+
+.back-button{
+    width: 25vw;
+    font-weight: bolder;
+    font-size: var(--big-font-size);
+    color: var(--white-text);
+    background-color: var(--dark-blue);
+    padding: 2vh 0;
+    border: none;
+    cursor: pointer;
+}

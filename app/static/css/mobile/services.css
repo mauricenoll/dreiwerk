@@ -1,0 +1,61 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .hero-section{
+        height: 60vh;
+    }
+
+    .hero-heading{
+        font-size: var(--half-very-large-font-size);
+    }
+
+    .hero-sub-heading{
+        font-size: var(--half-big-font-size);
+    }
+
+    .hero-text{
+        width: 60%;
+        font-size: var(--half-medium-font-size);
+    }
+
+    .button-with-svg{
+        margin-top: 10vh;
+        font-size: var(--half-big-font-size);
+    }
+
+    .services-overview{
+        width: 85%;
+    }
+
+    .services-overview-heading{
+        font-size: var(--half-big-font-size);
+        width: 45%;
+    }
+
+    .services-overview-text{
+        width: 55%;
+        font-size: var(--half-small-font-size);
+    }
+
+    .service-card{
+        width: 18%;
+        height: 12vh;
+    }
+
+    .service-title{
+        font-size: calc(var(--half-medium-font-size) - .15vw);
+    }
+
+    .service-icon{
+        width: var(--half-large-font-size);
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+
+
+}

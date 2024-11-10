@@ -1,6 +1,5 @@
 :root{
     --primary: rgb(240, 248, 255);
-
     --secondary: rgb(224, 233, 249);
     --dark-blue: rgb(0, 51, 102);
     --text: rgb(45, 45, 45);
@@ -11,6 +10,10 @@
     --shadow: rgba(42,42,42, .55);
     --accent-shadow: rgba(0, 204, 153, .65);
 
+    --black-to-accent: brightness(0) saturate(100%) invert(50%) sepia(93%) saturate(1036%) hue-rotate(125deg) brightness(97%) contrast(103%);
+    --black-to-highlight: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(4565%) hue-rotate(189deg) brightness(98%) contrast(101%);
+    --black-to-dark-blue: brightness(0) saturate(100%) invert(9%) sepia(92%) saturate(3727%) hue-rotate(200deg) brightness(95%) contrast(103%);
+
     --small-font-size: .677vw; /*13px*/
     --medium-font-size: .98vw; /*19px*/
     --big-font-size: 1.25vw; /*24px*/
@@ -18,15 +21,34 @@
     --very-large-font-size: 2.6vw; /*50px*/
     --humongous-font-size: 5.2vw; /*100px*/
 
+    --half-small-font-size: 1.25vw; /*10px at 800*/
+    --half-medium-font-size: 1.875vw; /*15px*/
+    --half-big-font-size: 2.5vw; /*20px*/
+    --half-large-font-size: 3.75vw; /*30px*/
+    --half-very-large-font-size: 5vw; /*40px*/
+    --half-humongous-font-size: 8.75vw; /*70px*/
+
+    --mobile-small-font-size: max(11px, 2.85vw); /*iPhone SE: 11px; MaxWidth = 15px*/
+    --mobile-medium-font-size: max(16px, 4.2vw); /*iPhone SE: 16px; MaxWidth = 22px*/
+    --mobile-big-font-size: max(20px, 4.95vw); /*iPhone SE: 20px; MaxWidth = 26px*/
+    --mobile-large-font-size: max(30px, 7.62vw); /*iPhone SE: 30px; MaxWidth = 40px*/
+    --mobile-very-large-font-size: max(42px, 9.15vw); /*iPhone SE: 42px; MaxWidth = 48px*/
+    --mobile-humongous-font-size: max(80px, 21vw); /*iPhone SE: 80px; MaxWidth = 110px*/
+
     --standard-shadow: 0 0 .325vw .105vw var(--shadow);
     --standard-accent-shadow: 0 0 .325vw .105vw var(--accent-shadow);
 
-    --black-to-accent: brightness(0) saturate(100%) invert(50%) sepia(93%) saturate(1036%) hue-rotate(125deg) brightness(97%) contrast(103%);
-    --black-to-highlight: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(4565%) hue-rotate(189deg) brightness(98%) contrast(101%);
-    --black-to-dark-blue: brightness(0) saturate(100%) invert(9%) sepia(92%) saturate(3727%) hue-rotate(200deg) brightness(95%) contrast(103%);
+    --half-standard-shadow: 0 0 1.3vw .65vw var(--shadow);
+    --half-standard-accent-shadow: 0 0 1.3vw .65vw var(--accent-shadow);
+
 
     --top-bar-height: 8vh;
+    --half-top-bar-height: 10vh;
+    --mobile-top-bar-height: 10vh;
+
 }
+
+
 
 body{
     background-color: var(--primary);
@@ -93,4 +115,19 @@ button:focus{
     padding: .75vh 2vw;
     background: rgb(0,51,102);
     background: linear-gradient(90deg, rgba(0,51,102,1) 5%, rgba(0,204,153,1) 100%);
+}
+
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+    .button-with-svg{
+        font-size: var(--half-big-font-size);
+    }
+
+    .button-icon{
+        width: var(--half-big-font-size);
+    }
+
+    .gradient-btn{
+        font-size: var(--half-medium-font-size);
+    }
+
 }
