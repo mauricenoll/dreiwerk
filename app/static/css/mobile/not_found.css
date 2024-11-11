@@ -1,0 +1,33 @@
+@media only screen and (max-width: 800px) and (min-width: 526px) {
+
+    .big-404{
+        font-size: var(--half-humongous-font-size);
+    }
+
+    .text-404{
+        font-size: var(--half-medium-font-size);
+    }
+
+    .back-button{
+        font-size: var(--half-big-font-size);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 525px) {
+    .big-404{
+        font-size: var(--mobile-humongous-font-size);
+    }
+
+    .text-404{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .back-button{
+        font-size: var(--mobile-big-font-size);
+        width: 40vw;
+    }
+
+}
