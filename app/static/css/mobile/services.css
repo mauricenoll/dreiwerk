@@ -57,5 +57,68 @@
 
 @media only screen and (max-width: 525px) {
 
+        .hero-section{
+            padding: 4vh 0 7vh 0;
+        }
+
+    .hero-sub-heading{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .hero-heading{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    .hero-text{
+        width: 80%;
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .button-with-svg{
+        margin-top: 5vh;
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .services-overview{
+        width: 95%;
+    }
+
+    .services-overview-heading-section{
+        margin-bottom: 2vh;
+        flex-wrap: wrap;
+    }
+
+    .services-overview-heading{
+        width: 100%;
+        font-size: var(--mobile-large-font-size);
+        text-align: center;
+    }
+
+    .services-overview-text{
+        margin-top: 2vh;
+        width: 100%;
+        font-size: var(--mobile-medium-font-size);
+        text-align: center;
+    }
+
+    .service-overview{
+        row-gap: 3vw;
+        column-gap: .75vw;
+    }
+
+    .service-card{
+        width: 25vw;
+        height: 15vw;
+        box-shadow: var(--mobile-standard-shadow);
+    }
+
+    .service-title{
+        font-size: var(--mobile-medium-font-size);
+        word-break: break-word;
+    }
+
+    .service-icon{
+        width: 30%;
+    }
 
 }

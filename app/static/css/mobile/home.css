@@ -113,6 +113,129 @@
 
 
 @media only screen and (max-width: 525px) {
+    .homepage-container{
+        padding: 2vh 0 4vh 0;
+        height: fit-content;
+    }
 
+    .homepage-sub-heading{
+        font-size: var(--mobile-medium-font-size);
+    }
 
+    .homepage-heading{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    #lower{
+       font-size: var(--mobile-big-font-size);
+    }
+
+    .homepage-paragraph{
+        width: 80%;
+        padding: 0;
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .button-with-svg{
+        margin-top: 2vh;
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .service-selection-row{
+        width: 100%;
+        padding: 1vh 0 1vh 0;
+        justify-content: space-evenly;
+    }
+
+    .service-selection-btn{
+        font-size: calc(2.66vw);
+        padding: .75vh .5vw;
+    }
+
+    .text-section{
+        width: 60%;
+    }
+
+    .service-info-container{
+        width: 95%;
+    }
+
+    .service-info-heading{
+        font-size: var(--mobile-big-font-size);
+        overflow: visible;
+        word-break: keep-all;
+    }
+
+    .more-info-btn{
+        font-size: var(--mobile-small-font-size);
+    }
+
+    .service-info-text{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .text-section .button-with-svg{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .icon-info-row{
+        width: 95%;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .icon-info-container{
+        gap: 1vw;
+        height: fit-content;
+        width: 90%;
+    }
+
+    .info-icon{
+        height: var(--mobile-humongous-font-size);
+    }
+
+    .info-icon-text{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .cooperation-div{
+        padding-bottom: 6vh;
+    }
+
+    .cooperation-heading{
+        padding: 0 2vw;
+        text-align: center;
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .cooperation-text{
+        font-size: var(--mobile-medium-font-size);
+        width: 95%;
+    }
+
+    .step-by-step-div{
+        width: 95%;
+        margin-top: 4vh;
+        flex-wrap: wrap;
+        row-gap: 1.5vh;
+    }
+
+    .step-container{
+        width: 45%;
+    }
+
+    .step-count{
+        font-size: var(--mobile-large-font-size);
+    }
+    .step-heading{
+        font-size: calc(var(--mobile-big-font-size) - .5vw);
+    }
+
+    .step-container-text{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .contact-us-btn{
+        font-size: var(--mobile-medium-font-size);
+    }
 }

@@ -40,5 +40,44 @@
 
 @media only screen and (max-width: 525px) {
 
+    .custom-dev-hero-section{
+        padding: 3vh 0 12vh 0;
+        height: fit-content;
+    }
 
+    .hero-heading{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    .hero-text{
+        font-size: var(--mobile-medium-font-size);
+        width: 80%;
+        margin-top: 3vh;
+        letter-spacing: inherit;
+    }
+
+    .bullet-point-section{
+        width: 90%;
+        border-radius: .8vw;
+        box-shadow: var(--mobile-standard-shadow);
+        translate: 0 -8vh;
+    }
+
+    #bullets{
+        margin-bottom: 2vh;
+    }
+
+    .bullet-point-row{
+        width: 90%;
+        gap: 1vw;
+        margin-top: 1vh;
+    }
+
+    .bullet-point-icn{
+        width: var(--mobile-large-font-size);
+    }
+
+    .bullet-point-text{
+        font-size: var(--mobile-medium-font-size);
+    }
 }

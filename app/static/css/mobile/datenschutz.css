@@ -27,6 +27,30 @@
 
 
 @media only screen and (max-width: 525px) {
+    .datenschutz{
+        width: 90%;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
+    }
 
+    h1{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    h2{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    h3{
+        font-size: var(--mobile-big-font-size);
+    }
+
+    p, a, li{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    a{
+        word-break: break-word;
+    }
 
 }

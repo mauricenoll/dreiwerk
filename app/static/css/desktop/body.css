@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.mobile-top-bar{
+    display: none;
+}
+
+.navigation-menu{
+    display: none;
+}
+
 .top-bar{
     position: fixed;
     top: 0;
@@ -190,10 +198,11 @@
 
 .bottom-bar-row{
     width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .company-link-section, .company-info-section{

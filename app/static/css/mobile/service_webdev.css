@@ -82,5 +82,103 @@
 
 @media only screen and (max-width: 525px) {
 
+    .hero-section{
+        width: 100%;
+        height: fit-content;
+        padding: 2vh 0 4vh 0;
+        margin-bottom: 4vh;
+    }
 
+    .hero-heading{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    .hero-text{
+        width: 80%;
+        font-size: var(--mobile-medium-font-size);
+        margin: 1.5vh 0;
+    }
+
+    .button-with-svg{
+        margin-top: 2.5vh;
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .professional-section{
+        width: 90%;
+        margin-bottom: 4vh;
+        border-radius: 1vw;
+        box-shadow: var(--mobile-standard-shadow);
+    }
+
+    .professional-heading{
+        width: 95%;
+        text-align: center;
+        font-size: var(--mobile-large-font-size);
+    }
+
+    .professional-text{
+        width: 95%;
+        margin-top: 1vh;
+        letter-spacing: inherit;
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .professional-bullet-points{
+        width: 95%;
+        gap: 1.25vh;
+        margin-top: 2vh
+    }
+
+    .bullet-point-row{
+        padding-left: .75vw;
+        gap: 1vw;
+    }
+
+    .bullet-point-icon{
+        width: var(--mobile-big-font-size);
+    }
+
+    .bullet-heading{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .bullet-point-text{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .slogan-heading{
+        font-size: var(--mobile-big-font-size);
+        width: 90%;
+        text-align: center;
+    }
+
+    .slogan-row{
+        margin-top: 2.5vh;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .buttons-section{
+        width: 80%;
+        align-items: center;
+    }
+
+    .buttons-section .button-with-svg{
+        font-size: var(--mobile-big-font-size);
+        color: var(--dark-blue);
+        border-color: var(--dark-blue);
+    }
+
+    #big-logo{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #big{
+        margin-top: 6vh ;
+        width: 80%;
+        filter: none;
+    }
 }

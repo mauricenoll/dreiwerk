@@ -59,14 +59,22 @@
     }
 
     .label-row{
-        font-size: var(--medium-font-size);
+        font-size: var(--half-medium-font-size);
     }
     label{
-        font-size: var(--medium-font-size);
+        font-size: var(--half-medium-font-size);
     }
 
     #checkbox-input{
-        font-size: var(--medium-font-size);
+        font-size: var(--half-medium-font-size);
+
+
+    }
+
+
+
+    .submit-btn{
+
     }
 
 }
@@ -74,5 +82,79 @@
 
 @media only screen and (max-width: 525px) {
 
+    .contact-hero{
+        height: 50vh;
+    }
+
+    .contact-hero-heading{
+        font-size: var(--mobile-humongous-font-size);
+    }
+
+    .contact-section{
+        width: 90%;
+        flex-direction: column;
+
+    }
+
+    .contact-info{
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-info-heading, .success-msg{
+        font-size: var(--mobile-large-font-size);
+        margin-bottom: 3vh;
+    }
+
+    .link-with-icon{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .icon{
+        width: var(--mobile-big-font-size);
+    }
+
+    .contact-form{
+        padding-top: 3vh;
+        width: 90%;
+    }
+
+    .dropdown-menu, .text-input{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .input-error-msg{
+        font-size: var(--mobile-small-font-size);
+    }
+
+    .message{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .submit-btn{
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .error-msg {
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .label-row{
+        font-size: var(--mobile-medium-font-size);
+    }
+    label{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    #checkbox-input{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .input-div{
+        min-height: 6vh;
+        height: fit-content;
+    }
 
 }

@@ -3,6 +3,11 @@
         height: var(--half-top-bar-height);
     }
 
+    .content{
+        min-height: calc(100vh - var(--half-top-bar-height));
+        padding-top: calc(var(--half-top-bar-height));
+    }
+
     .logo-section {
         width: 25%;
         display: flex;
@@ -53,6 +58,7 @@
 
     .company-link-section, .company-info-section{
         width: 35%;
+
     }
 
     .copyright-text{
@@ -73,9 +79,192 @@
 
 
 @media only screen and (max-width: 525px) {
-    .top-bar{
-        height: var(--half-top-bar-height);
-        background-color: pink;
+
+    .content{
+        min-height: calc(100vh - var(--mobile-top-bar-height));
+        padding-top: calc(var(--mobile-top-bar-height));
     }
+
+    .top-bar{
+        display: none;
+    }
+
+    .mobile-top-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 101;
+        height: var(--mobile-top-bar-height);
+        border-bottom: .5vw solid var(--accent);
+        background-color: var(--dark-blue);
+        box-shadow: var(--standard-accent-shadow);
+    }
+
+    .mobile-logo-section{
+        margin-left: 5vw;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .mobile-logo{
+        max-height: 90%;
+        filter: var(--black-to-accent);
+    }
+
+    .mobile-navigation-section{
+        margin-right: 5vw;
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .open-nav-button{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .nav-icon{
+        width: var(--mobile-very-large-font-size);
+        filter: var(--black-to-accent);
+    }
+
+    .navigation-menu{
+        border-collapse: collapse;
+        position: fixed;
+        top: calc(var(--mobile-top-bar-height));
+        left: 0;
+        right: 0;
+        background-color: var(--dark-blue);
+        z-index: 101;
+        padding-bottom: .75vh;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        transition: 300ms;
+
+    }
+
+    .mobile-nav-button, .mobile-nav-button-with-svg{
+        cursor: pointer;
+        width: 100%;
+        padding: .5vh 0;
+        font-family: "Orbitron", sans-serif;
+        border: none;
+        border-bottom: .15vw solid var(--highlight);
+
+        outline: none;
+        background-color: transparent;
+        color: var(--white-text);
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .mobile-nav-button-with-svg{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .mobile-dropdown-content .mobile-nav-button .inner-button{
+        padding-left: 10vw;
+    }
+
+    .nav-btn-icon{
+        width: var(--mobile-medium-font-size);
+        filter: invert(1);
+        transition: 300ms;
+    }
+
+    .inner-button{
+        margin: 0;
+        padding-left: 5vw;
+        text-align: left;
+    }
+
+    .mobile-nav-dropdown{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .mobile-dropdown-content{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .bottom-bar{
+        height: fit-content;
+        padding-bottom: 2vh;
+        padding-top: 3vh;
+    }
+
+    .bottom-bar-row{
+        width: 90%;
+    }
+
+    .company-link-section, .company-info-section{
+        width: 40%;
+        height: 100%;
+        gap: .5vh;
+    }
+
+    .company-info-section{
+        width: 45%;
+        justify-content: end;
+        align-items: end;
+
+    }
+
+    .bottom-bar-heading{
+        font-size: var(--mobile-small-font-size);
+        margin-bottom: 1vh;
+    }
+
+    .bottom-bar-nav-link{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .copyright-text{
+        font-size: var(--mobile-medium-font-size);
+        width: 55%;
+    }
+
+    .bottom-bar-link{
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .bottom-link-section{
+        gap: .5vw;
+        width: 45%;
+    }
+
+    #lower-row{
+        padding-top: 2vh;
+    }
+
 
 }

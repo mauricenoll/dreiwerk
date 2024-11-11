@@ -43,6 +43,31 @@
 
 
 @media only screen and (max-width: 525px) {
+    .appdev-hero-section{
+        padding: 4vh 0 6vh 0;
+        height: fit-content;
+    }
 
+    .typewriter{
+        width: 90%;
+    }
+
+    .appdev-hero-heading{
+        font-size: var(--mobile-big-font-size);
+    }
+
+    .appdev-hero-text{
+        margin-top: 3vh;
+        width: 80%;
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .appdev-info-section{
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+        width: 95%;
+        gap: 1vw;
+        flex-direction: column-reverse;
+    }
 
 }

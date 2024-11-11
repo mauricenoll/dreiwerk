@@ -28,6 +28,7 @@
 
 .tech-stack-landing-text{
     font-size: var(--medium-font-size);
+    color: var(--dark-blue);
     font-weight: bolder;
     width: 50%;
     text-align: center;

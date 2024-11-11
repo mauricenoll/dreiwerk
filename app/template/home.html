@@ -20,7 +20,10 @@
             Machen Sie den nächsten Schritt! Sichern Sie sich eine persönliche Beratung und entdecken Sie, wie wir Ihnen dabei helfen, neue Wege zu gehen.
         </p>
 
-        <button class="secure-consultation-btn" onclick="navigate('/kontakt')">Jetzt Beratung sichern!</button>
+        <div class="button-with-svg" onclick="navigate('/kontakt')">
+                Jetzt Beratung sichern!
+                <img class="button-icon" alt="" src="{{ url_for('assets', path='/icons/arrow_right.svg') }}">
+            </div>
     </div>
     <div class="service-selection-row">
         <button class="service-selection-btn" id="webdev" onclick="toggleSelectedServiceSection(this)">Web-Entwicklung</button>

@@ -33,5 +33,44 @@
 
 @media only screen and (max-width: 525px) {
 
+    .hero-big-heading{
+        font-size: var(--mobile-very-large-font-size);
+    }
 
+    .hero-heading{
+        font-size: var(--mobile-large-font-size);
+    }
+
+    .hero-text{
+        margin-top: 4vh;
+        width: 80%;
+        font-size: var(--mobile-medium-font-size);
+    }
+
+    .icon-text{
+        font-size: var(--mobile-small-font-size);
+    }
+
+    .info-icon-card{
+        width: 90%;
+    }
+
+    .icon-row{
+        flex-direction: column;
+        height: fit-content;
+        gap: 2vw;
+        margin-bottom: 3vh;
+    }
+
+    .icon{
+        height: var(--mobile-very-large-font-size);
+    }
+
+    .info-icon-card{
+        width: 90%;
+    }
+
+    .icon-text{
+        font-size: var(--mobile-medium-font-size);
+    }
 }

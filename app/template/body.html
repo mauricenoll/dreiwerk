@@ -43,6 +43,29 @@
         </div>
     </div>
 </div>
+<div class="mobile-top-bar">
+    <div class="mobile-logo-section">
+        <img class="mobile-logo" alt="DreiWerk Logo" src="/assets/images/dreiwerk_short.svg" onclick="navigate('/')">
+    </div>
+    <div class="mobile-navigation-section">
+        <button class="open-nav-button" id="open_nav_button" onclick="toggleMobileNavigation()"><img class="nav-icon" alt="open navigation button" src="/assets/icons/menu.svg"> </button>
+    </div>
+</div>
+<div class="navigation-menu" id="mobile_nav_menu">
+    <button class="mobile-nav-button" onclick="navigate('/')"><p class="inner-button">Home</p></button>
+    <div class="mobile-nav-dropdown" >
+        <button class="mobile-nav-button-with-svg" onclick="toggleDropdownNavigation()"><p class="inner-button">Leistungen</p><img class="nav-btn-icon" id="nav_btn_icon" alt="Show More Icon" src="/assets/icons/arrow_down.svg"> </button>
+        <div class="mobile-dropdown-content" id="mobile_dropdown_content">
+            <button class="mobile-nav-button" onclick="navigate('/leistungen/')"><p class="inner-button">Unsere Leistungen</p></button>
+            <button class="mobile-nav-button" onclick="navigate('/leistungen/web-entwicklung')"><p class="inner-button">Web-Entwicklung</p></button>
+            <button class="mobile-nav-button" onclick="navigate('/leistungen/app-entwicklung')"><p class="inner-button">App-Entwicklung</p></button>
+            <button class="mobile-nav-button" onclick="navigate('/leistungen/individual-software')"><p class="inner-button">Individualsoftware</p></button>
+        </div>
+    </div>
+    <button class="mobile-nav-button" onclick="navigate('/tech-stack')"><p class="inner-button">Technologien</p></button>
+    <button class="mobile-nav-button" onclick="navigate('/about-us')"><p class="inner-button">Über uns</p></button>
+    <button class="mobile-nav-button" onclick="navigate('/kontakt')"><p class="inner-button">Kontakt</p></button>
+</div>
 <div class="content">
     {% block content %}
     {% endblock %}
@@ -69,7 +92,7 @@
             <a class="bottom-bar-nav-link" href="mailto:info@dreiwerk-solutions.de">info@dreiwerk-solutions.de</a>
         </div>
     </div>
-    <div class="bottom-bar-row">
+    <div class="bottom-bar-row" id="lower-row">
         <div class="copyright-text">Copyright © 2024 DreiWerk Solutions</div>
         <div class="bottom-link-section">
             <a class="bottom-bar-link" href="/impressum">Impressum</a>
