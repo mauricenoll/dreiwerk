@@ -43,7 +43,6 @@ class EmailHandler:
         self.login()
         message['To'] = recipient
         message['From'] = self.email
-        print(message)
         self.mailserver.sendmail(self.email, recipient, message.as_string())
         self.send_inquiry_to_myself(form_data)
         self.mailserver.quit()
