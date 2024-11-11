@@ -3,7 +3,7 @@ import os
 import uvicorn
 from typing import Annotated
 from fastapi import Request, Response, status, Form
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, RedirectResponse, FileResponse
 import mail_handler
 from mail_templates import contact_template
 import utils.app_setup as server
@@ -12,6 +12,7 @@ from smtplib import SMTPRecipientsRefused, SMTPSenderRefused, SMTPDataError, SMT
 app = server.app
 
 
+# fixme: to header problem with emails
 @app.get("/", response_class=HTMLResponse)
 def get_homepage(request: Request):
     context = {

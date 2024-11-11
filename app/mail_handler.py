@@ -36,14 +36,15 @@ class EmailHandler:
             text = f"{text}\n{key}: {inquiry_form.get(key)}"
 
         msg.attach(MIMEText(text, "plain"))
-        self.mailserver.sendmail(self.email, [self.email], msg.as_string())
+        print(msg)
+        self.mailserver.sendmail(self.email, self.email, msg.as_string())
 
     def send_mail(self, recipient: str, message: MIMEMultipart, form_data: dict):
         self.login()
         message['To'] = recipient
         message['From'] = self.email
-        message['Cc'] = 'basic@dreiwerk-solutions.de'
-        self.mailserver.sendmail(self.email, [recipient], message.as_string())
+        print(message)
+        self.mailserver.sendmail(self.email, recipient, message.as_string())
         self.send_inquiry_to_myself(form_data)
         self.mailserver.quit()
 

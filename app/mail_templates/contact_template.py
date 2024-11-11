@@ -1,12 +1,10 @@
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-message = MIMEMultipart('alternative')
-
-message['Subject'] = "Deine Anfrage bei DreiWerk Solutions"
-
 
 def get_contact_mail_template(name):
+    message = MIMEMultipart()
+    message['Subject'] = "Deine Anfrage bei DreiWerk Solutions"
     html = f"""
         <!DOCTYPE html>
         <html lang="de">
