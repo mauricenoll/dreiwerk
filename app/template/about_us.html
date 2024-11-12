@@ -2,7 +2,8 @@
 {% block head %}
 <link href="{{ url_for('desktop', path='/about_us.css') }}" rel="stylesheet">
 <link href="{{ url_for('mobile', path='/about_us.css') }}" rel="stylesheet">
-<script src="{{ url_for('js', path='/about_us.js') }}"></script>
+<script async src="{{ url_for('js', path='/about_us.js') }}"></script>
+<meta name="description" content="Hier erzählen wir etwas darüber, wer wir sind und was wir so machen.">
 
 {% endblock %}
 

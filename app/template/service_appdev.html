@@ -2,7 +2,8 @@
 {% block head %}
 <link href="{{ url_for('desktop', path='/service_appdev.css') }}" rel="stylesheet">
 <link href="{{ url_for('mobile', path='/service_appdev.css') }}" rel="stylesheet">
-<script src="{{ url_for('js', path='/service_appdev.js') }}"></script>
+<script async src="{{ url_for('js', path='/service_appdev.js') }}"></script>
+<meta name="description" content="App-Entwicklung von DreiWerk - Solutions, Cross-Plattform-Apps, Android-Apps, iOS-Apps">
 
 {% endblock %}
 

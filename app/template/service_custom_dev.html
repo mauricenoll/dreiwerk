@@ -2,7 +2,8 @@
 {% block head %}
 <link href="{{ url_for('desktop', path='/service_custom_dev.css') }}" rel="stylesheet">
 <link href="{{ url_for('mobile', path='/service_custom_dev.css') }}" rel="stylesheet">
-<script src="{{ url_for('js', path='/service_custom_dev.js') }}"></script>
+<script async src="{{ url_for('js', path='/service_custom_dev.js') }}"></script>
+<meta name="description" content="Individualsoftware von DreiWerk - Solutions, Maßgeschneiderte Unternehmenssoftware">
 
 {% endblock %}
 

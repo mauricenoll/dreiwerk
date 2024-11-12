@@ -2,12 +2,13 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="{{ url_for('desktop', path='/body.css') }}" rel="stylesheet">
     <link href="{{ url_for('mobile', path='/body.css') }}" rel="stylesheet">
     <link href="{{ url_for('css', path='/general.css') }}" rel="stylesheet">
     <link href="{{ url_for('css', path='/fonts.css') }}" rel="stylesheet">
-    <script src="{{ url_for('js', path='/body.js') }}"></script>
+    <script async src="{{ url_for('js', path='/body.js') }}"></script>
     <title>{{title}} || DreiWerk Solutions</title>
     <!-- All icons are from https://www.svgrepo.com/  -->
     {% block head %}
