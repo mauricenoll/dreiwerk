@@ -113,7 +113,7 @@
     }
 
     .service-title{
-        font-size: var(--mobile-medium-font-size);
+        font-size: calc(var(--mobile-medium-font-size) - .5vw);
         word-break: break-word;
     }
 
